@@ -1,2 +1,2 @@
 install:
-	    stack build --copy-bins
+	    stack setup && stack build --copy-bins
