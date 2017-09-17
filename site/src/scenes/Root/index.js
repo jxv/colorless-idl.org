@@ -17,6 +17,9 @@ class Root extends Component {
   render() {
     return (
       <div className="App">
+        <div style={{padding: '30px'}}>
+          <img src='https://raw.githubusercontent.com/jxv/colorless-data/master/colorless-logo-sidebar.png' width='176' height='77'/>
+        </div>
       </div>
     );
   }

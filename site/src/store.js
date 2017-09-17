@@ -2,7 +2,7 @@ import { REHYDRATE } from 'redux-persist/constants';
 import createActionBuffer from 'redux-action-buffer';
 import { createStore, applyMiddleware } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { hashHistory } from 'react-router';
+import { browserHistory } from 'react-router';
 import promise from 'redux-promise-middleware';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import createSagaMiddleware from 'redux-saga';
@@ -25,6 +25,6 @@ const saga = function*() {
 
 sagaMiddleware.run(saga);
 
-export const history = syncHistoryWithStore(hashHistory, store);
+export const history = syncHistoryWithStore(browserHistory, store);
 
 export default store;
