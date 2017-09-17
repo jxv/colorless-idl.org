@@ -1,0 +1,42 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.16.2",
+    "css-loader": "^0.28.4",
+    "html-loader": "^0.5.1",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.0",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-overlays": "^0.7.0",
+    "react-redux": "^5.0.5",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "react-svg": "^2.1.21",
+    "react-tabs": "^1.0.0",
+    "redux": "^3.6.0",
+    "redux-action-buffer": "^1.1.0",
+    "redux-actions": "^2.0.3",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-form": "^6.7.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.8.1",
+    "redux-promise-middleware": "^4.2.1",
+    "redux-saga": "^0.15.3",
+    "semantic-ui-react": "^0.68.5",
+    "superagent": "^3.5.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

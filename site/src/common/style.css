@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Passero+One|Montserrat|Open+Sans|Oswald|Inconsolata|Krona+One|Lora|Lato');
+
+.App {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #444;
+}
+
+h1 {
+  font-family: 'Passero One';
+  font-size: 10em;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.title {
+  font-family: 'Passero One';
+}
+
+h2 {
+  font-family: 'Lobster Two';
+  font-size: 3em;
+  margin: 0px;
+  white-space: nowrap;
+}
+
+.App-intro {
+  font-size: 10em;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.vcenter-wrap {
+  display: table;
+  text-align: center;
+}
+
+.vcenter-elem {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+invisible-navbar {
+  background: none;
+  color: '#fff';
+  width: 100%;
+}
+
+invisible-nav-item {
+  background: none;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  text-align: center;
+  text-size-adjust: 100%;
+}
+
+invisible-nav-item:hover {
+  background: none;
+}
+
+blockquote {
+  font-family: Lora, serif;
+  font-size: 18px;
+  font-style: italic;
+  max-width: 500px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  border-left: none;
+  color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #555;
+}
+
+blockquote cite {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
