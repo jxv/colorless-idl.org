@@ -18,7 +18,7 @@ class Root extends Component {
     return (
       <div className="App">
         <div style={{padding: '30px'}}>
-		Fluid, stuff coming soon.
+          <a href="https://github.com/jxv/fluid">GitHub Repo</a>
         </div>
       </div>
     );
