@@ -3,7 +3,7 @@
 
 Fluid is a low-opininated, easily integrable, and innovated API system.
 
-### Overview of Design Constraints
+### Design Constraints
 
 #### Generation
 
@@ -39,8 +39,11 @@ the barrier for tooling is quite low for generating both.
 
 Service functions are generated as loggable types.
 
+#### Discoverability
 
-### How to integrate into an existing API
+The complete and supported specs of an API is obtained with a GET at the same endpoint of POST'ing queries.
+
+### Integrate into an existing API
 
 1. Create an endpoint
 2. Add integration code, and inject headers into meta middleware
@@ -52,4 +55,4 @@ Service functions are generated as loggable types.
 * Service call (Hello world)
 * `addInt`, `if`, `mapList`, `fn`, `do`, `tuple`
 
-### How are multiple API versions supported?
+### Supporting multiple API versions
