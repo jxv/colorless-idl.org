@@ -1,1 +1,1 @@
-web: /app/.local/bin/colorless-site
+web: /app/.local/bin/fluid-site

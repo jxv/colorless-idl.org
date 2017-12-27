@@ -1,0 +1,74 @@
+<div .masthead>
+    <div .container>
+        <div .row>
+            <h1 .header>
+                <img src=@{StaticR img_logo_png} height="102px" width="197px" alt="Fluid" />
+            <h2>
+                The Programmatic IDL
+
+<div .container>
+    <!-- Starting
+        ================================================== -->
+    <div .bs-docs-section>
+        <div .row>
+            <div .col-lg-12>
+                <div .page-header>
+                    <h1 #start>Design Goals
+                    <p>
+                        Fluid is a low-opininated, easily integrable, and innovated API system.
+                        To ensure a long running and evolving system, there are many fitted constraints and features.
+
+                    <h3>
+                        Generation
+                    <p>
+                        As an IDL, code is generated from a spec for the client and server.
+                        Additionally libraries are available to translate and run queries.
+
+                    <h3>
+                        Versioning
+                    <p>
+                        Fluid provides an automated versioning system,
+                        so that your APIs can freely progress while supporting older versions.
+
+                    <h3>
+                        Programmatic
+                    <p>
+                        The query lang is a programming language.
+                        The language enables any unexpected representations of expressions often constrained by other APIs.
+
+                    <h3>
+                        Documentation
+                    <p>
+                        The spec is intentionally designed for ease of reading, writing, and document generation.
+
+                    <h3>
+                        Query language
+                    <p>
+                        If for some reason the client chooses not to use generated code,
+                        the query language is clear enough to write by hand.
+                        Debugging is also easier as a result.
+
+                    <h3>
+                        Tooling
+                    <p>
+                        Because of the carefully spartanized spec and query language,
+                        the barrier for tooling is quite low for generating both.
+
+                    <h3>
+                        Discoverability
+                    <p>
+                        The complete and supported specs of an API is obtained with a GET at the same endpoint of POST'ing queries.
+
+      <hr>
+        <div .row>
+            <div .col-lg-12>
+                <div .page-header>
+                    <h1 #start>Integrate into an existing API
+
+                    <ol>
+                        <li>Create an endpoint
+                        <li>Add integration code, and inject headers into meta middleware
+                        <li>Fill spec with schema
+                        <li>Generate and implement
+
+      <hr>
