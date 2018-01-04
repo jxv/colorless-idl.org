@@ -1,3 +1,4 @@
+
 <div .masthead>
     <div .container>
         <div .row>
@@ -5,6 +6,10 @@
                 <img src=@{StaticR img_logo_png} height="102px" width="197px" alt="Fluid" />
             <h2>
                 The Programmatic IDL
+
+            <br />
+
+            <a href="https://github.com/jxv/fluid" style="color: #fff; text-decoration: underline">GitHub Repo</a>
 
 <div .container>
     <!-- Starting

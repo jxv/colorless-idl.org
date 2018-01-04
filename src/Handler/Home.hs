@@ -24,6 +24,8 @@ data FileForm = FileForm
 -- inclined, or create a single monolithic file.
 getHomeR :: Handler Html
 getHomeR = do
+    let radius = "100px" :: Text
+    let radius' = 100 :: Int
     defaultLayout $ do
         setTitle "Fluid | The Programmatic IDL"
         $(widgetFile "homepage")
