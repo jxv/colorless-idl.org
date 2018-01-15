@@ -3,13 +3,7 @@
     <div .container>
         <div .row>
             <h1 .header>
-                <img src=@{StaticR img_logo_png} height="102px" width="197px" alt="Fluid" />
-            <h2>
-                The Programmatic IDL
-
-            <br />
-
-            <a href="https://github.com/jxv/fluid" style="color: #fff; text-decoration: underline">GitHub Repo</a>
+                <img src=@{StaticR img_logo_png} height="176px" width="388px" alt="Fluid" />
 
 <div .container>
     <!-- Starting
@@ -18,6 +12,14 @@
         <div .row>
             <div .col-lg-12>
                 <div .page-header>
+
+                    <h2>
+                        Fluid | The Programmatic IDL
+
+                    <br />
+                    <a href="https://github.com/jxv/fluid" style="text-decoration: underline">GitHub Repo</a>
+                    <br />
+
                     <h1 #start>Design Goals
                     <p>
                         Fluid is a low-opininated, easily integrable, and innovated API system.
@@ -40,6 +42,12 @@
                     <p>
                         The query lang is a programming language.
                         The language enables any unexpected representations of expressions often constrained by other APIs.
+
+                    <h3>
+                        Protocol Agnostic
+                    <p>
+                        Not bound to HTTP(S), Websockets, or any other protocol.
+                        The only requirement is reading and writing JSON.
 
                     <h3>
                         Documentation

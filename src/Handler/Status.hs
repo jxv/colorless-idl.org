@@ -3,12 +3,12 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
-module Handler.Home where
+module Handler.Status where
 
 import Import
 
-getHomeR :: Handler Html
-getHomeR = do
+getStatusR :: Handler Html
+getStatusR = do
     defaultLayout $ do
         setTitle "Fluid | The Programmatic IDL"
-        $(widgetFile "homepage")
+        $(widgetFile "status")
