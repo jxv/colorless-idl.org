@@ -1,7 +1,7 @@
 <h1>
   Language Support Overview
 <br />
-<table .table .table-striped .table-bordered style="font-size: 0.7em">
+<table .table .table-striped .table-bordered style="font-size: 0.6em">
   <thead>
     <tr style="border:none">
       <th scope="col" style="border:none">
@@ -106,160 +106,160 @@
     <tr>
       <td>
         Crystal
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code><a href="https://github.com/crystal-lang/crystal/pull/2701">Void
+      <td><code>Bool
+      <td><code>Int32
+      <td><code>Float32
+      <td><code>Char
+      <td><code>String
+      <td><code>a&nbsp;|&nbsp;Nil</code>
+      <td><code>a&nbsp;|&nbsp;b</code>
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Array.html">Array
+      <td>?
+      <td><code>struct</code>
+      <td><a href="https://crystal-lang.org/docs/syntax_and_semantics/union_types.html">Union type
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>C++
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>bool
+      <td><code>int32_t
+      <td><code>double
+      <td><code>char
+      <td><code>string
+      <td><code>optional
+      <td><code>variant
+      <td><code>vector
+      <td><code>using
+      <td><code>struct
+      <td>Tagged unions
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>C&#35;
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>bool
+      <td><code>int
+      <td><code>double
+      <td><code>char
+      <td><code>string
+      <td><code>Option
+      <td><code>Either
+      <td><code>ArraryList
+      <td>?
+      <td><code>public struct
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>Elm
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>()
+      <td><code>Bool
+      <td><code>Int
+      <td><code>Double
+      <td><code>Char
+      <td><code>String
+      <td><code>Maybe
+      <td><code>Either
+      <td><code>List
+      <td>?
+      <td><code>type
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>F&#35;
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>unit
+      <td><code>bool
+      <td><code>int
+      <td><code>float
+      <td><code>char
+      <td><code>string
+      <td><code>Option
+      <td><code>Either
+      <td><code>List
+      <td>?
+      <td><code>type
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>Go
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>bool
+      <td><code>int32
+      <td><code>float64
+      <td><code>char
+      <td><code>string
+      <td><code>*</code>/?
+      <td><code>Either</code>/?
+      <td><code>List
+      <td>?
+      <td><code>type a struct
+      <td><a href="https://github.com/golang/go/issues/19412">?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>Haskell
-      <td>()
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Double">Double
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Char">Char
-      <td><a href="https://hackage.haskell.org/package/text-1.2.3.0/docs/Data-Text.html#t:Text">Text
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Maybe">Maybe
-      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Either">Either
-      <td>[]
-      <td><a href="https://wiki.haskell.org/Newtype">newtype
+      <td><code>()
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Double">Double
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Char">Char
+      <td><code><a href="https://hackage.haskell.org/package/text-1.2.3.0/docs/Data-Text.html#t:Text">Text
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Maybe">Maybe
+      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Either">Either
+      <td><code>[]
+      <td><code><a href="https://wiki.haskell.org/Newtype">newtype
       <td><a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Record
       <td><a href="https://wiki.haskell.org/Algebraic_data_type">ADT
       <td><a href="https://hackage.haskell.org/package/aeson">Aeson
@@ -274,52 +274,52 @@
       <td>?
     <tr>
       <td>Haxe
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>Void
+      <td><code>Bool
+      <td><code>Int
+      <td><code>Float
+      <td><code>String
+      <td><code>String
+      <td><code>Null
+      <td><code>Either
+      <td><code>Array
+      <td>?
+      <td><code>class
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>Idris
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>()
+      <td><code>Bool
+      <td><code>Int
+      <td><code>Double
+      <td><code>Char
+      <td><code>String
+      <td><code>Maybe
+      <td><code>Either
+      <td><code>List
+      <td>?
+      <td><code>record
+      <td>?
+      <td><code><a href="https://github.com/ziman/lightyear">lightyear
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>Java
       <td>
