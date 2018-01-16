@@ -11,8 +11,8 @@
       start = Date.now();
 
   var params = {
-    AMP: 12,
-    FREQ: 0.01,
+    AMP: 1,
+    FREQ: 0.1,
     SPEED: 1,
     VERTICAL: false
   };
