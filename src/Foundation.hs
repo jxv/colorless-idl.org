@@ -121,6 +121,11 @@ instance Yesod App where
                     , menuItemAccessCallback = True
                     }
                 , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Integrate"
+                    , menuItemRoute = Left IntegrateR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
                     { menuItemLabel = "GitHub"
                     , menuItemRoute = Right "https://github.com/jxv/fluid"
                     , menuItemAccessCallback = True

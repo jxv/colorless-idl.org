@@ -1,5 +1,5 @@
 
-<div .masthead>
+<div .masthead .rainbow_border>
     <div .container>
         <div .row>
             <h1 .header>
@@ -12,24 +12,28 @@
     <center>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h3 style="font-family: Pacifico, cursive;">
             Create resilient and flexible APIs with ease.
         <br />
         <br />
+        <br />
 
     <hr>
-
-    <!-- Starting
-        ================================================== -->
-    <div .row>
-        <div .col-lg-12>
-            <div .page-header>
-                <h1 #start>Integrate into an existing API
-
-                <ol>
-                    <li>Create an endpoint
-                    <li>Add integration code, and inject headers into meta middleware
-                    <li>Fill spec with schema
-                    <li>Generate and implement
-
-      <hr>
+      <br />
+      <br />
+      <br />
+      <br />
+      <center>
+        <h1>
+          Core Features
+        <br />
+        <br />
+        <br />
+        <br />
+        <img src=@{StaticR img_info_png} alt="Fluid" height="616px" width="535px" />
+<br />
+<br />

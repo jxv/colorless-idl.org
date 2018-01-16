@@ -8,3 +8,4 @@
 /design DesignR GET
 /query QueryR GET
 /evolution EvolutionR GET
+/integrate IntegrateR GET

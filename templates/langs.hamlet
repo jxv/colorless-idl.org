@@ -60,14 +60,6 @@
         Enum
       <th scope="col">
         JSON
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        Gen
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        Lib
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        HTTP
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        WS
       <th scope="col">
         Gen
       <th scope="col">
@@ -76,7 +68,15 @@
         HTTP
       <th scope="col">
         WS
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
+      <th scope="col">
+        Gen
+      <th scope="col">
+        Lib
+      <th scope="col">
+        HTTP
+      <th scope="col">
+        WS
+      <th scope="col">
         Gen
   <tbody>
     <tr>
