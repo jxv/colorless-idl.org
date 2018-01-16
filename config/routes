@@ -3,3 +3,8 @@
 /robots.txt RobotsR GET
 / HomeR GET
 /status StatusR GET
+/spec SpecR GET
+/langs LangsR GET
+/design DesignR GET
+/query QueryR GET
+/evolution EvolutionR GET

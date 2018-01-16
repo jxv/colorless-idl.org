@@ -11,26 +11,28 @@
 
         <div #navbar .collapse.navbar-collapse>
             <ul .nav.navbar-nav>
-                $forall MenuItem label route _ <- navbarLeftFilteredMenuItems
-                    <li :Just route == mcurrentRoute:.active>
-                        <a href="@{route}">#{label}
+                $forall MenuItem label eitherRoute _ <- navbarLeftFilteredMenuItems
+                    $case eitherRoute
+                        $of Left route
+                            <li :Just route == mcurrentRoute:.active>
+                                <a href="@{route}">#{label}
+                        $of Right route
+                            <li>
+                                <a href="#{route}">#{label}
 
             <ul .nav.navbar-nav.navbar-right>
-                $forall MenuItem label route _ <- navbarRightFilteredMenuItems
-                    <li :Just route == mcurrentRoute:.active>
-                        <a href="@{route}">#{label}
+                $forall MenuItem label eitherRoute _ <- navbarRightFilteredMenuItems
+                    $case eitherRoute
+                        $of Left route
+                            <li :Just route == mcurrentRoute:.active>
+                                <a href="@{route}">#{label}
+                        $of Right route
+                            <li>
+                                <a href="#{route}">#{label}
 
 <!-- Page Contents -->
 
 <div .container>
-    $if not $ Just HomeR == mcurrentRoute
-        <ul .breadcrumb>
-            $forall bc <- parents
-                <li>
-                    <a href="@{fst bc}">#{snd bc}
-
-            <li .active>#{title}
-
     $maybe msg <- mmsg
       <div .alert.alert-info #message>#{msg}
 
@@ -47,4 +49,4 @@ $else
 <footer .footer>
     <div .container>
         <p .text-muted>
-            #{appCopyright $ appSettings master} | <a href="https://github.com/jxv/fluid-site">Source Code</a>
+            #{appCopyright $ appSettings master} | <a href="https://github.com/jxv/fluid-site">Website Source</a>

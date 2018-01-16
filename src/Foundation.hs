@@ -29,7 +29,7 @@ data App = App
 
 data MenuItem = MenuItem
     { menuItemLabel :: Text
-    , menuItemRoute :: Route App
+    , menuItemRoute :: Either (Route App) Text
     , menuItemAccessCallback :: Bool
     }
 
@@ -91,8 +91,38 @@ instance Yesod App where
         -- Define the menu items of the header.
         let menuItems =
                 [ NavbarLeft $ MenuItem
-                    { menuItemLabel = "Home"
-                    , menuItemRoute = HomeR
+                    { menuItemLabel = "Fluid"
+                    , menuItemRoute = Left HomeR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Spec"
+                    , menuItemRoute = Left SpecR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Query"
+                    , menuItemRoute = Left QueryR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Evolution"
+                    , menuItemRoute = Left EvolutionR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Langs"
+                    , menuItemRoute = Left LangsR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Design"
+                    , menuItemRoute = Left DesignR
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "GitHub"
+                    , menuItemRoute = Right "https://github.com/jxv/fluid"
                     , menuItemAccessCallback = True
                     }
                 ]

@@ -1,0 +1,92 @@
+<h1>
+  Spec
+
+<h2>
+  Types
+
+<table .table .table-striped .table-condensed .table-bordered>
+  <thead>
+    <tr>
+      <th>
+        Name
+      <th>
+        Description
+      <th>
+        Schema Type (JSON)
+  <tbody>
+    <tr>
+      <td>
+        Unit
+      <td>
+        Non-meaningful value
+      <td>
+        <code>
+          "Unit"
+
+    <tr>
+      <td>
+        Int
+      <td>
+        32-bit integer
+      <td>
+        <code>
+          "Int"
+
+    <tr>
+      <td>
+        Float
+      <td>
+        64-bit floating point
+      <td>
+        <code>
+          "Float"
+
+    <tr>
+      <td>
+        Char
+      <td>
+        Character supporting unicode
+      <td>
+        <code>
+          "Char"
+
+    <tr>
+      <td>
+        String
+      <td>
+        String of text supporting unicode
+      <td>
+        <code>
+          "String"
+
+    <tr>
+      <td>
+        Option
+      <td>
+        Represents possible existence of a value (a.k.a. Nullable, Maybe, and Optional)
+      <td>
+        <code>
+          {"n":"Option", "p":&lt;Type&gt;}
+
+    <tr>
+      <td>
+        Either
+      <td>
+        Represents one of two possible values (a.k.a. Result)
+      <td>
+        <code>
+          {"n":"Either", "p":[&lt;Type&gt;,&lt;Type&gt;]}
+
+    <tr>
+      <td>
+        List
+      <td>
+        List of values
+      <td>
+        <code>
+          {"n":"List", "p":&lt;Type&gt;}
+<h2>
+  Pull Config
+
+<h2>
+  Schema

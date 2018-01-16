@@ -1,0 +1,646 @@
+<h1>
+  Language Support Overview
+<br />
+<table .table .table-striped .table-bordered style="font-size: 0.7em">
+  <thead>
+    <tr style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+        Types
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        Server
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+      <th scope="col" style="border:none">
+        Client
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none">
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        Docs
+    <tr>
+      <th scope="col">
+        Lang
+      <th scope="col">
+        Unit
+      <th scope="col">
+        Bool
+      <th scope="col">
+        Int
+      <th scope="col">
+        Float
+      <th scope="col">
+        Char
+      <th scope="col">
+        String
+      <th scope="col">
+        Option
+      <th scope="col">
+        Either
+      <th scope="col">
+        List
+      <th scope="col">
+        Wrap
+      <th scope="col">
+        Struct
+      <th scope="col">
+        Enum
+      <th scope="col">
+        JSON
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        Gen
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        Lib
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        HTTP
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        WS
+      <th scope="col">
+        Gen
+      <th scope="col">
+        Lib
+      <th scope="col">
+        HTTP
+      <th scope="col">
+        WS
+      <th scope="col" style="border:none; background-color: #222; color: #fff">
+        Gen
+  <tbody>
+    <tr>
+      <td>Clojure
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Crystal
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>C++
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>C&#35;
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>Elm
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>F&#35;
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>Go
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>Haskell
+      <td>()
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Double">Double
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Char">Char
+      <td><a href="https://hackage.haskell.org/package/text-1.2.3.0/docs/Data-Text.html#t:Text">Text
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Maybe">Maybe
+      <td><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Either">Either
+      <td>[]
+      <td><a href="https://wiki.haskell.org/Newtype">newtype
+      <td><a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Record
+      <td><a href="https://wiki.haskell.org/Algebraic_data_type">ADT
+      <td><a href="https://hackage.haskell.org/package/aeson">Aeson
+      <td>Yes
+      <td>Yes
+      <td><a href="https://github.com/jxv/fluid/issues/23">Yes
+      <td><a href="https://github.com/jxv/fluid/issues/24">NYI
+      <td>Yes
+      <td>Yes
+      <td><a href="https://github.com/jxv/fluid/issues/25">Yes
+      <td><a href="https://github.com/jxv/fluid/issues/26">NYI
+      <td>?
+    <tr>
+      <td>Haxe
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>Idris
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>Java
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        JavaScript
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Kotlin
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Nim
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Node
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        OCaml
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        PureScript
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Python
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Ruby
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Rust
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Scala
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        Swift
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+    <tr>
+      <td>
+        TypeScript
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>
+      <td>

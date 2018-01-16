@@ -39,6 +39,11 @@ import System.Log.FastLogger                (defaultBufSize, newStdoutLoggerSet,
 import Handler.Common
 import Handler.Home
 import Handler.Status
+import Handler.Spec
+import Handler.Langs
+import Handler.Design
+import Handler.Query
+import Handler.Evolution
 
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the
