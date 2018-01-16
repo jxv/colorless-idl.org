@@ -3,10 +3,14 @@
     <div .container>
         <div .row>
             <h1 .header>
-                <img src=@{StaticR img_logo_png} height="176px" width="388px" alt="Fluid" />
+                <canvas id="output"></canvas>
+                <img id="input" src=@{StaticR img_logo_png} height="200px" width="400px" alt="Fluid" style="display:none;"/>
 
-            <div style="color:#fff">
+            <div style="color:#fff; margin-top: -20px;">
               The Programmatic IDL
+
+            <br />
+            <br />
 
 <div .container>
     <center>
