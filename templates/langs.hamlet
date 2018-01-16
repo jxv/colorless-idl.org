@@ -249,7 +249,7 @@
       <td>NYI
       <td>?
     <tr>
-      <td>Haskell
+      <td><a href="https://github.com/jxv/fluid-haskell">Haskell
       <td><code>()
       <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
       <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
@@ -322,178 +322,178 @@
       <td>?
     <tr>
       <td>Java
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>Boolean</code>
+      <td><code>Integer</code>
+      <td><code>Double</code>
+      <td><code>Char</code>
+      <td><code>String</code>
+      <td><code>Optional</code>
+      <td><code>Either</code>
+      <td><code>ArrayList</code>
+      <td>?
+      <td><code>public class</code>
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         JavaScript
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td>null
+      <td>boolean
+      <td>number
+      <td>number
+      <td>string
+      <td>string
+      <td>null
+      <td>Tagged&nbsp;unions
+      <td><a href="https://www.javascript.com/learn/javascript/arrays">Array
+      <td>N/A
+      <td><code>{}
+      <td>Tagged&nbsp;unions
+      <td>Native
+      <td>-
+      <td>-
+      <td>-
+      <td>-
+      <td>WIP
+      <td>WIP
+      <td>WIP
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Kotlin
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>Unit
+      <td><code>Boolean
+      <td><code>Int
+      <td><code>Double
+      <td><code>Char
+      <td><code>String
+      <td><code>?
+      <td><code>Either
+      <td><code>List
+      <td>?
+      <td><code>data class
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Nim
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>bool
+      <td><code>int32
+      <td><code>float64
+      <td><code>char
+      <td><code>string
+      <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/option.nim">Option*
+      <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/either.nim">Either*
+      <td><code><a href="https://nim-by-example.github.io/seqs/">seq
+      <td><a href="https://nim-by-example.github.io/types/distinct/">distinct
+      <td><a href="https://nim-by-example.github.io/types/objects/">object
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Node
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td>null
+      <td>boolean
+      <td>boolean
+      <td>number
+      <td>number
+      <td>string
+      <td>string
+      <td>Tagged&nbsp;unions
+      <td>Array
+      <td>N/A
+      <td><code>{}
+      <td>Tagged&nbsp;unions
+      <td>Native
+      <td>-
+      <td>-
+      <td>-
+      <td>-
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         OCaml
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>unit
+      <td><code>bool
+      <td><code>int
+      <td><code>double
+      <td><code>char
+      <td><code>string
+      <td><code>maybe
+      <td><code>result
+      <td><code>list
+      <td>?
+      <td><code>type
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         PureScript
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>()
+      <td><code>Boolean
+      <td><code>Int
+      <td><code>Number
+      <td><code>Char
+      <td><code>String
+      <td><code>Maybe
+      <td><code>Either
+      <td><code>List
+      <td>?
+      <td>Record
+      <td>ADT
+      <td><a href="https://github.com/purescript-contrib/purescript-argonaut">argonaut
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Python
@@ -519,6 +519,31 @@
       <td>
       <td>
       <td>
+    <tr>
+      <td>
+        Reason
+      <td><code>void
+      <td><code>bool
+      <td><code>int
+      <td><code>float
+      <td><code>string
+      <td><code>option
+      <td><code>either
+      <td><code>list
+      <td>?
+      <td><a href="https://reasonml.github.io/docs/en/record.html">Record
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Ruby
@@ -547,100 +572,100 @@
     <tr>
       <td>
         Rust
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>()
+      <td><code>bool
+      <td><code>i32
+      <td><code>f64
+      <td><code>char
+      <td><code>str
+      <td><code>Option
+      <td><code>Result
+      <td><code>LinkedList
+      <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#tuple-structs">Tuple&nbsp;struct
+      <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#structs">Struct
+      <td><a href="https://doc.rust-lang.org/book/first-edition/enums.html">Enum
+      <td><a href="https://github.com/serde-rs/json">serde_json
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Scala
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>Unit
+      <td><code>Boolean
+      <td><code>Int
+      <td><code>Double
+      <td><code>Char
+      <td><code>String
+      <td><code>Option
+      <td><code>Either
+      <td><code>Array
+      <td>?
+      <td>case&nbsp;class
+      <td>sealed&nbsp;traits
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         Swift
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>Void
+      <td><code>Bool
+      <td><code>Int
+      <td><code>Double
+      <td><code>Char
+      <td><code>String
+      <td><code>?
+      <td><code>Either
+      <td><code>[]
+      <td><code>typealias
+      <td><code>struct
+      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html">enum
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
     <tr>
       <td>
         TypeScript
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
+      <td><code>void</code>/?
+      <td><code>boolean
+      <td><code>number
+      <td><code>numner
+      <td><code>string
+      <td><code>string
+      <td><code>(a&nbsp;|&nbsp;null)
+      <td><code>(a&nbsp;|&nbsp;b)
+      <td><code>Array
+      <td>?
+      <td><code>interface
+      <td>?
+      <td>?
+      <td>WIP
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>?
