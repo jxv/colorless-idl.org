@@ -228,19 +228,19 @@ Under construction
       <td>?
     <tr>
       <td>F&#35;
-      <td><code>unit
-      <td><code>bool
-      <td><code>int
-      <td><code>float
-      <td><code>char
-      <td><code>string
-      <td><code>Option
-      <td><code>Either
-      <td><code>List
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/unit-type">unit
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">bool
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">int
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">float
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">char
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">string
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/options">Option
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/results">Result
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists">List
       <td>?
-      <td><code>type
-      <td>?
-      <td>?
+      <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records">Record
+      <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/enumerations">Enumeration
+      <td><a href="http://fsharp.github.io/FSharp.Data/library/JsonProvider.html">JSON
       <td>WIP
       <td>NYI
       <td>NYI
