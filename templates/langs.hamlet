@@ -154,19 +154,19 @@
       <td>?
     <tr>
       <td>C&#35;
-      <td><code>void</code>/?
-      <td><code>bool
-      <td><code>int
-      <td><code>double
-      <td><code>char
-      <td><code>string
-      <td><code>Option
-      <td><code>Either
-      <td><code>ArraryList
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void">void</a></code>/?
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool">bool
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int">int
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double">double
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/char">char
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string"> string
+      <td><code><a href="https://github.com/nlkl/Optional">Optional
+      <td><code><a href="https://github.com/mikhailshilkov/mikhailio-samples/blob/master/Either%7BTL%2CTR%7D.cs">Either
+      <td><code><a href="https://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx">ArraryList
       <td>?
-      <td><code>public struct
+      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs">struct
       <td>?
-      <td>?
+      <td><a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data">Serializer
       <td>WIP
       <td>NYI
       <td>NYI
