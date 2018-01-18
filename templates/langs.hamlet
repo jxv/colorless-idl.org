@@ -105,18 +105,18 @@
       <td>
     <tr>
       <td>C++
-      <td><code>void</code>/?
-      <td><code>bool
-      <td><code>int32_t
-      <td><code>double
-      <td><code>char
-      <td><code>string
-      <td><code>optional
-      <td><code>variant
-      <td><code>vector
-      <td><code>using
-      <td><code>struct
-      <td>Tagged unions
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">void</a></code>/<code><a href="http://en.cppreference.com/w/cpp/types/nullptr_t">nullptr_t</a></code>
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">bool
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">int32_t
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">double
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">char
+      <td><code><a href="http://en.cppreference.com/w/cpp/string/basic_string">string
+      <td><code><a href="http://en.cppreference.com/w/cpp/utility/optional">optional
+      <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
+      <td><code><a href="http://en.cppreference.com/w/cpp/container/vector">vector
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/namespace">using
+      <td><code><a href="http://en.cppreference.com/w/cpp/language/class">struct
+      <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
       <td>?
       <td>WIP
       <td>NYI
