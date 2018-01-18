@@ -4,7 +4,7 @@
 / HomeR GET
 /status StatusR GET
 /spec SpecR GET
-/langs LangsR GET
+/languages LangsR GET
 /design DesignR GET
 /query QueryR GET
 /evolution EvolutionR GET

@@ -3,7 +3,7 @@
     <div .container>
         <div .row>
             <h1 .header>
-                <img id="input" src=@{StaticR img_logo_png} height="117px" width="258px" alt="Fluid"/>
+                <img id="input" src=@{StaticR img_logo_png} height="140px" width="310px" alt="Fluid"/>
 
             <div style="color:#fff;">
               The Programmatic IDL

@@ -111,7 +111,7 @@ instance Yesod App where
                     , menuItemAccessCallback = True
                     }
                 , NavbarLeft $ MenuItem
-                    { menuItemLabel = "Langs"
+                    { menuItemLabel = "Languages"
                     , menuItemRoute = Left LangsR
                     , menuItemAccessCallback = True
                     }
