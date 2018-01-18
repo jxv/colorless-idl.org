@@ -204,19 +204,19 @@ Under construction
       <td>?
     <tr>
       <td>Elm
-      <td><code>()
-      <td><code>Bool
-      <td><code>Int
-      <td><code>Double
-      <td><code>Char
-      <td><code>String
-      <td><code>Maybe
-      <td><code>Either
-      <td><code>List
-      <td>?
-      <td><code>type
-      <td>?
-      <td>?
+      <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/07-unit-type.html">()
+      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Bool
+      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Int
+      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Double
+      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Char
+      <td><code><a href="http://elm-lang.org/docs/syntax#literals">String
+      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Maybe">Maybe
+      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Result">Result
+      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List">List
+      <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">type&nbsp;alias
+      <td><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">Record
+      <td><a href="https://www.elm-tutorial.org/en/01-foundations/05-union-types.html">Union types
+      <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Encode">Encode</a>/<a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode">Decode</a>
       <td>WIP
       <td>NYI
       <td>NYI
