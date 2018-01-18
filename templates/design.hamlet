@@ -6,6 +6,11 @@
             <div .col-lg-12>
                 <div .page-header>
                     <h1 #start>Design
+
+                    Under construction
+                    <br />
+                    <br />
+
                     <p>
                         Fluid is a low-opininated, easily integrable, and innovated API system.
                         To ensure a long running and evolving system, there are many fitted constraints and features.
