@@ -180,19 +180,19 @@ Under construction
       <td>?
     <tr>
       <td>D
-      <td><code>void</code>/?
-      <td><code>bool
-      <td><code>int
-      <td><code>double
-      <td><code>char
-      <td><code>String
-      <td><code>Nullable!
-      <td><code>Algebraic!
-      <td><code>DList!
+      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">void</a></code>/?
+      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">bool
+      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">int
+      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">double
+      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">char
+      <td><code><a href="https://dlang.org/spec/arrays.html#strings">String
+      <td><code><a href="https://dlang.org/phobos/std_typecons.html#Nullable">Nullable!
+      <td><code><a href="https://dlang.org/phobos/std_variant.html#.Algebraic">Algebraic!
+      <td><code><a href="https://dlang.org/phobos/std_container_slist.html">SList!
       <td>?
-      <td><code>struct
-      <td>?
-      <td>?
+      <td><code><a href="https://dlang.org/spec/struct.html">struct
+      <td><a href="https://dlang.org/spec/struct.html#opaque_struct_unions">Tagged unions
+      <td><a href="https://dlang.org/phobos/std_json.html">json
       <td>WIP
       <td>NYI
       <td>NYI
