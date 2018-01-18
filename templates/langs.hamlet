@@ -131,18 +131,18 @@
       <td>
         Crystal
       <td><code><a href="https://github.com/crystal-lang/crystal/pull/2701">Void
-      <td><code>Bool
-      <td><code>Int32
-      <td><code>Float32
-      <td><code>Char
-      <td><code>String
-      <td><code>a&nbsp;|&nbsp;Nil</code>
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Bool.html">Bool
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Int32.html">Int32
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Float64.html">Float64
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Char.html">Char
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/String.html">String
+      <td><code>a&nbsp;|&nbsp;<a href="https://crystal-lang.org/api/0.24.1/Nil.html">Nil</a></code>
       <td><code>a&nbsp;|&nbsp;b</code>
       <td><code><a href="https://crystal-lang.org/api/0.24.1/Array.html">Array
       <td>?
-      <td><code>struct</code>
+      <td><code><a href="https://crystal-lang.org/api/0.24.1/Struct.html">struct</a></code>
       <td><a href="https://crystal-lang.org/docs/syntax_and_semantics/union_types.html">Union type
-      <td>?
+      <td><a href="https://crystal-lang.org/api/0.24.1/JSON.html">JSON
       <td>WIP
       <td>NYI
       <td>NYI
