@@ -1,12 +1,11 @@
 
-<div .masthead .rainbow_border>
+<div .masthead >
     <div .container>
         <div .row>
             <h1 .header>
-                <canvas id="output"></canvas>
-                <img id="input" src=@{StaticR img_logo_png} height="200px" width="400px" alt="Fluid" style="display:none;"/>
+                <img id="input" src=@{StaticR img_logo_png} height="117px" width="258px" alt="Fluid"/>
 
-            <div style="color:#fff; margin-top: -20px;">
+            <div style="color:#fff;">
               The Programmatic IDL
 
             <br />

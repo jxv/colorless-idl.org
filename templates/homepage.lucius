@@ -2,14 +2,3 @@ li {
     line-height: 2em;
     font-size: 16px
 }
-
-@-webkit-keyframes rainbow {
-  0% {box-shadow: 0px 0px 100px 100px hsla(0, 100%, 50%, 0.1);}
-  50% {box-shadow: 0px 0px 100px 100px hsla(127, 100%, 50%, 0.1);}
-  100% {box-shadow: 0px 0px 100px 100px hsla(255, 100%, 50%, 0.1);}
-}
-
-.rainbow_border{
-  box-shadow: none;
-  -webkit-animation: rainbow 60s infinite alternate;
-}

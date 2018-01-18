@@ -13,7 +13,7 @@
   var params = {
     AMP: 1,
     FREQ: 0.1,
-    SPEED: 1,
+    SPEED: 0.1,
     VERTICAL: false
   };
 
@@ -34,8 +34,11 @@
         ctx.drawImage(img,
                     0, i, img.width, 1,
                     0 + ofs, i, img.width, 1);
+        ctx.drawImage(img,
+                    0, i, img.width, 1,
+                    0 + ofs, i, img.width, 1);
       }
-
+      ctx.setTransform(0.5, 0, 0, 0.5, 0, 0);
     }
   }
 
@@ -46,4 +49,4 @@
   }
 
   loop();
-})();
+});
