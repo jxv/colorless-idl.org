@@ -673,19 +673,19 @@ Under construction
     <tr>
       <td>
         TypeScript
-      <td><code>void</code>/?
-      <td><code>boolean
-      <td><code>number
-      <td><code>numner
-      <td><code>string
-      <td><code>string
-      <td><code>(a&nbsp;|&nbsp;null)
-      <td><code>(a&nbsp;|&nbsp;b)
-      <td><code>Array
-      <td>?
-      <td><code>interface
-      <td>?
-      <td>?
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">void
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">boolean
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;null)
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;b)
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">Array
+      <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Type alias
+      <td><code><a href="https://www.typescriptlang.org/docs/handbook/interfaces.html">interface
+      <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Unions
+      <td><a href="http://choly.ca/post/typescript-json/">Built-in
       <td>WIP
       <td>NYI
       <td>NYI
