@@ -623,19 +623,19 @@ Under construction
     <tr>
       <td>
         Scala
-      <td><code>Unit
-      <td><code>Boolean
-      <td><code>Int
-      <td><code>Double
-      <td><code>Char
-      <td><code>String
-      <td><code>Option
-      <td><code>Either
-      <td><code>Array
-      <td>?
-      <td>case&nbsp;class
-      <td>sealed&nbsp;traits
-      <td>?
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Unit.html">Unit
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Boolean.html">Boolean
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Int.html">Int
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Double.html">Double
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Char.html">Char
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/String.html">String
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Option.html">Option
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/util/Either.html">Either
+      <td><code><a href="http://www.scala-lang.org/api/current/scala/Array.html">Array
+      <td><a href="https://docs.scala-lang.org/overviews/core/value-classes.html">value&nbsp;classes
+      <td><a href="https://docs.scala-lang.org/tour/case-classes.html">case&nbsp;class
+      <td><a href="https://docs.scala-lang.org/tour/traits.html">sealed&nbsp;traits
+      <td><a href="https://stackoverflow.com/a/14442630">?
       <td>WIP
       <td>NYI
       <td>NYI
