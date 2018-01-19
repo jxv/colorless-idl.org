@@ -130,6 +130,11 @@ instance Yesod App where
                     , menuItemRoute = Right "https://github.com/jxv/fluid"
                     , menuItemAccessCallback = True
                     }
+                , NavbarRight $ MenuItem
+                    { menuItemLabel = "Examples"
+                    , menuItemRoute = Right "https://github.com/jxv/fluid/tree/master/examples"
+                    , menuItemAccessCallback = True
+                    }
                 ]
 
         let navbarLeftMenuItems = [x | NavbarLeft x <- menuItems]
