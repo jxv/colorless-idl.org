@@ -300,19 +300,19 @@ Under construction
       <td>?
     <tr>
       <td>Haxe
-      <td><code>Void
-      <td><code>Bool
-      <td><code>Int
-      <td><code>Float
-      <td><code>String
-      <td><code>String
-      <td><code>Null
-      <td><code>Either
-      <td><code>Array
+      <td><code><a href="https://haxe.org/manual/types-void.html">Void
+      <td><code><a href="https://haxe.org/manual/types-bool.html">Bool
+      <td><code><a href="https://api.haxe.org/Int.html">Int
+      <td><code><a href="https://api.haxe.org/Float.html">Float
+      <td><code><a href="https://api.haxe.org/String.html">String
+      <td><code><a href="https://api.haxe.org/String.html">String
+      <td><code><a href="https://api.haxe.org/Null.html">Null
+      <td><code><a href="https://api.haxe.org/haxe/ds/Either.html">Either
+      <td><code><a href="https://api.haxe.org/Array.html">Array
       <td>?
-      <td><code>class
+      <td><code><a href="https://haxe.org/manual/types-class-instance.html">class
       <td>?
-      <td>?
+      <td><a href="https://api.haxe.org/haxe/Json.html">Json
       <td>WIP
       <td>NYI
       <td>NYI
