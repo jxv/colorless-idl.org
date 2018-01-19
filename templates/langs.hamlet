@@ -373,18 +373,18 @@ Under construction
     <tr>
       <td>
         JavaScript
-      <td>null
+      <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null
       <td>boolean
       <td>number
       <td>number
       <td>string
       <td>string
       <td>null
-      <td>Tagged&nbsp;unions
+      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
       <td><a href="https://www.javascript.com/learn/javascript/arrays">Array
       <td>N/A
       <td><code>{}
-      <td>Tagged&nbsp;unions
+      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
       <td>Native
       <td>-
       <td>-
@@ -398,19 +398,19 @@ Under construction
     <tr>
       <td>
         Kotlin
-      <td><code>Unit
-      <td><code>Boolean
-      <td><code>Int
-      <td><code>Double
-      <td><code>Char
-      <td><code>String
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char
+      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String
       <td><code>?
-      <td><code>Either
-      <td><code>List
+      <td><code><a href="https://github.com/adelnizamutdinov/kotlin-either">Either
+      <td><code><a href="https://kotlinlang.org/docs/reference/collections.html">List
       <td>?
-      <td><code>data class
+      <td><code><a href="https://kotlinlang.org/docs/reference/data-classes.html">data&nbsp;class
       <td>?
-      <td>?
+      <td><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-j-s-o-n/index.html">JSON
       <td>WIP
       <td>NYI
       <td>NYI
