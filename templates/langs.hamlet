@@ -473,19 +473,19 @@ Under construction
     <tr>
       <td>
         OCaml
-      <td><code>unit
-      <td><code>bool
-      <td><code>int
-      <td><code>double
-      <td><code>char
-      <td><code>string
-      <td><code>maybe
-      <td><code>result
-      <td><code>list
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">unit
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">bool
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">int
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">double
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">char
+      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">string
+      <td><code><a href="https://ocaml.org/learn/tutorials/null_pointers_asserts_and_warnings.html">option
+      <td><code><a href="https://ocaml.org/learn/tutorials/error_handling.html#Result-type">result
+      <td><code><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#The-type-of-a-linked-list">list
       <td>?
-      <td><code>type
+      <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Structures">Structs
       <td>?
-      <td>?
+      <td><a href="https://github.com/mjambon/yojson">yojson
       <td>WIP
       <td>NYI
       <td>NYI
