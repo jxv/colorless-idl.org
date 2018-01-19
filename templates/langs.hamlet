@@ -648,19 +648,19 @@ Under construction
     <tr>
       <td>
         Swift
-      <td><code>Void
-      <td><code>Bool
-      <td><code>Int
-      <td><code>Double
-      <td><code>Char
-      <td><code>String
-      <td><code>?
-      <td><code>Either
-      <td><code>[]
-      <td><code>typealias
-      <td><code>struct
+      <td><code><a href="https://developer.apple.com/documentation/swift/void">Void
+      <td><code><a href="https://developer.apple.com/documentation/swift/bool">Bool
+      <td><code><a href="https://developer.apple.com/documentation/swift/int">Int
+      <td><code><a href="https://developer.apple.com/documentation/swift/double">Double
+      <td><code><a href="https://developer.apple.com/documentation/swift/character">Character
+      <td><code><a href="https://developer.apple.com/documentation/swift/string">String
+      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID452">Optional
+      <td><code><a href="https://github.com/robrix/Either">Either
+      <td><code><a href="https://developer.apple.com/documentation/swift/array">Array
+      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID361">typealias
+      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html">struct
       <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html">enum
-      <td>?
+      <td><a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON
       <td>WIP
       <td>NYI
       <td>NYI
