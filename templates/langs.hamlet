@@ -423,19 +423,19 @@ Under construction
     <tr>
       <td>
         Nim
-      <td><code>void</code>/?
-      <td><code>bool
-      <td><code>int32
-      <td><code>float64
-      <td><code>char
-      <td><code>string
+      <td><code><a href="https://nim-lang.org/docs/manual.html#types-void-type">void
+      <td><code><a href="https://nim-lang.org/docs/manual.html#types-boolean-type">bool
+      <td><code><a href="https://nim-lang.org/docs/system.html#int32">int32
+      <td><code><a href="https://nim-lang.org/docs/system.html#float64">float64
+      <td><code><a href="https://nim-lang.org/docs/system.html#char">char
+      <td><code><a href="https://nim-lang.org/docs/system.html#string">string
       <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/option.nim">Option*
       <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/either.nim">Either*
       <td><code><a href="https://nim-by-example.github.io/seqs/">seq
       <td><a href="https://nim-by-example.github.io/types/distinct/">distinct
       <td><a href="https://nim-by-example.github.io/types/objects/">object
       <td>?
-      <td>?
+      <td><a href="https://nim-lang.org/docs/json.html">json
       <td>WIP
       <td>NYI
       <td>NYI
