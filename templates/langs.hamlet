@@ -549,19 +549,19 @@ Under construction
       <td>
         Reason
       <td><code>void
-      <td><code>bool
-      <td><code>int
-      <td><code>float
-      <td><code>string
-      <td><code>option
-      <td><code>either
-      <td><code>list
+      <td><code><a href="https://reasonml.github.io/docs/en/boolean.html">bool
+      <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">int
+      <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">float
+      <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">char
+      <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">string
+      <td><code><a href="https://reasonml.github.io/docs/en/variant.html#option">option
+      <td><code><a href="https://reasonml.github.io/docs/en/more-on-type.html#type-argument">result
+      <td><code><a href="https://reasonml.github.io/docs/en/variant.html#list">list
       <td>?
       <td><a href="https://reasonml.github.io/docs/en/record.html">Record
-      <td>?
-      <td>?
+      <td><a href="https://reasonml.github.io/docs/en/variant.html">Variant
+      <td><a href="https://github.com/glennsl/bs-json">bs-json
       <td>WIP
-      <td>NYI
       <td>NYI
       <td>NYI
       <td>NYI
