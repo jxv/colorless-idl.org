@@ -253,18 +253,18 @@ Under construction
     <tr>
       <td>Go
       <td><code>void</code>/?
-      <td><code>bool
-      <td><code>int32
-      <td><code>float64
-      <td><code>char
-      <td><code>string
+      <td><code><a href="https://golang.org/pkg/builtin/#bool">bool
+      <td><code><a href="https://golang.org/pkg/builtin/#int32">int32
+      <td><code><a href="https://golang.org/pkg/builtin/#float64">float64
+      <td><code><a href="https://golang.org/pkg/builtin/#char">char
+      <td><code><a href="https://golang.org/pkg/builtin/#string">string
       <td><code>*</code>/?
       <td><code>Either</code>/?
-      <td><code>List
+      <td><a href="https://golang.org/pkg/container/list/">List
       <td>?
-      <td><code>type a struct
+      <td><a href="https://www.golang-book.com/books/intro/9#section1">Structs
       <td><a href="https://github.com/golang/go/issues/19412">?
-      <td>?
+      <td><a href="https://golang.org/pkg/encoding/json/">json
       <td>WIP
       <td>NYI
       <td>NYI
