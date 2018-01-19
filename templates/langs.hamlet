@@ -484,7 +484,7 @@ Under construction
       <td><code><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#The-type-of-a-linked-list">list
       <td>?
       <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Structures">Structs
-      <td>?
+      <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Variants-qualified-unions-and-enums">Variants
       <td><a href="https://github.com/mjambon/yojson">yojson
       <td>WIP
       <td>NYI
@@ -498,18 +498,18 @@ Under construction
     <tr>
       <td>
         PureScript
-      <td><code>()
-      <td><code>Boolean
-      <td><code>Int
-      <td><code>Number
-      <td><code>Char
-      <td><code>String
-      <td><code>Maybe
-      <td><code>Either
-      <td><code>List
-      <td>?
-      <td>Record
-      <td>ADT
+      <td><code><a href="https://pursuit.purescript.org/packages/purescript-prelude/3.1.0/docs/Data.Unit">Unit
+      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Boolean">Boolean
+      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Int">Int
+      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Number">Number
+      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Char">Char
+      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:String">String
+      <td><code><a href="https://pursuit.purescript.org/packages/purescript-maybe/3.0.0/docs/Data.Maybe#t:Maybe">Maybe
+      <td><code><a href="https://pursuit.purescript.org/packages/purescript-either/3.1.0/docs/Data.Either#t:Either">Either
+      <td><code><a href="https://pursuit.purescript.org/packages/purescript-lists/4.8.0/docs/Data.List.Types#t:List">List
+      <td><code><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#newtypes">newtype
+      <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#records">Record
+      <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#tagged-unions">ADT
       <td><a href="https://github.com/purescript-contrib/purescript-argonaut">argonaut
       <td>WIP
       <td>NYI
