@@ -455,16 +455,16 @@ Under construction
       <td>number
       <td>string
       <td>string
-      <td>Tagged&nbsp;unions
+      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
       <td>Array
       <td>N/A
       <td><code>{}
-      <td>Tagged&nbsp;unions
+      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
       <td>Native
-      <td>-
-      <td>-
-      <td>-
-      <td>-
+      <td>NYI
+      <td>NYI
+      <td>NYI
+      <td>NYI
       <td>NYI
       <td>NYI
       <td>NYI
