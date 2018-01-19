@@ -141,7 +141,7 @@ Under construction
       <td><code>a&nbsp;|&nbsp;<a href="https://crystal-lang.org/api/0.24.1/Nil.html">Nil</a></code>
       <td><code>a&nbsp;|&nbsp;b</code>
       <td><code><a href="https://crystal-lang.org/api/0.24.1/Array.html">Array
-      <td>?
+      <td>has-a
       <td><code><a href="https://crystal-lang.org/api/0.24.1/Struct.html">struct</a></code>
       <td><a href="https://crystal-lang.org/docs/syntax_and_semantics/union_types.html">Union type
       <td><a href="https://crystal-lang.org/api/0.24.1/JSON.html">JSON
@@ -165,7 +165,7 @@ Under construction
       <td><code><a href="https://github.com/nlkl/Optional">Optional
       <td><code><a href="https://github.com/mikhailshilkov/mikhailio-samples/blob/master/Either%7BTL%2CTR%7D.cs">Either
       <td><code><a href="https://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx">ArraryList
-      <td>?
+      <td>has-a
       <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs">struct
       <td>?
       <td><a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data">Serializer
@@ -189,7 +189,7 @@ Under construction
       <td><code><a href="https://dlang.org/phobos/std_typecons.html#Nullable">Nullable!
       <td><code><a href="https://dlang.org/phobos/std_variant.html#.Algebraic">Algebraic!
       <td><code><a href="https://dlang.org/phobos/std_container_slist.html">SList!
-      <td>?
+      <td>has-a
       <td><code><a href="https://dlang.org/spec/struct.html">struct
       <td><a href="https://dlang.org/spec/struct.html#opaque_struct_unions">Tagged unions
       <td><a href="https://dlang.org/phobos/std_json.html">json
@@ -237,7 +237,7 @@ Under construction
       <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/options">Option
       <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/results">Result
       <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists">List
-      <td>?
+      <td>has-a
       <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records">Record
       <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/enumerations">Enumeration
       <td><a href="http://fsharp.github.io/FSharp.Data/library/JsonProvider.html">JSON
@@ -261,7 +261,7 @@ Under construction
       <td><code>*</code>/?
       <td><code>Either</code>/?
       <td><a href="https://golang.org/pkg/container/list/">List
-      <td>?
+      <td>has-a
       <td><a href="https://www.golang-book.com/books/intro/9#section1">Structs
       <td><a href="https://github.com/golang/go/issues/19412">?
       <td><a href="https://golang.org/pkg/encoding/json/">json
@@ -309,7 +309,7 @@ Under construction
       <td><code><a href="https://api.haxe.org/Null.html">Null
       <td><code><a href="https://api.haxe.org/haxe/ds/Either.html">Either
       <td><code><a href="https://api.haxe.org/Array.html">Array
-      <td>?
+      <td>has-a
       <td><code><a href="https://haxe.org/manual/types-class-instance.html">class
       <td>?
       <td><a href="https://api.haxe.org/haxe/Json.html">Json
@@ -333,7 +333,7 @@ Under construction
       <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Maybe.html">Maybe
       <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Either.html">Either
       <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.List.html">List
-      <td>?
+      <td>has-a
       <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#records">Record
       <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#data-types">ADT
       <td><a href="https://github.com/ziman/lightyear">lightyear
@@ -348,17 +348,17 @@ Under construction
       <td>?
     <tr>
       <td>Java
-      <td><code>void</code>/?
-      <td><code>Boolean</code>
-      <td><code>Integer</code>
-      <td><code>Double</code>
-      <td><code>Char</code>
-      <td><code>String</code>
-      <td><code>Optional</code>
-      <td><code>Either</code>
-      <td><code>ArrayList</code>
-      <td>?
-      <td><code>public class</code>
+      <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">void</a></code>/<code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Void.html">Void</a></code>
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Boolean.html">Boolean
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Integer.html">Integer
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Double.html">Double
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Char.html">Char
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">String
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html">Optional
+      <td><code><a href="https://github.com/spencerwi/Either.java">Either
+      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html">ArrayList
+      <td>has-a
+      <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">class
       <td>?
       <td>?
       <td>WIP
