@@ -324,19 +324,19 @@ Under construction
       <td>?
     <tr>
       <td>Idris
-      <td><code>()
-      <td><code>Bool
-      <td><code>Int
-      <td><code>Double
-      <td><code>Char
-      <td><code>String
-      <td><code>Maybe
-      <td><code>Either
-      <td><code>List
+      <td><code><a href="http://docs.idris-lang.org/en/latest/reference/language-features.html">()
+      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Bool.html#Prelude.Bool.Bool">Bool
+      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Int
+      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Double
+      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Char
+      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">String
+      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Maybe.html">Maybe
+      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Either.html">Either
+      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.List.html">List
       <td>?
-      <td><code>record
-      <td>?
-      <td><code><a href="https://github.com/ziman/lightyear">lightyear
+      <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#records">Record
+      <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#data-types">ADT
+      <td><a href="https://github.com/ziman/lightyear">lightyear
       <td>WIP
       <td>NYI
       <td>NYI
