@@ -598,15 +598,15 @@ Under construction
     <tr>
       <td>
         Rust
-      <td><code>()
-      <td><code>bool
-      <td><code>i32
-      <td><code>f64
-      <td><code>char
-      <td><code>str
-      <td><code>Option
-      <td><code>Result
-      <td><code>LinkedList
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.unit.html">()
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.bool.html">bool
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.i32.html">i32
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.f64.html">f64
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.char.html">char
+      <td><code><a href="https://doc.rust-lang.org/std/primitive.str.html">str
+      <td><code><a href="https://doc.rust-lang.org/std/option/enum.Option.html">Option
+      <td><code><a href="https://doc.rust-lang.org/std/result/enum.Result.html">Result
+      <td><code><a href="https://doc.rust-lang.org/std/collections/struct.LinkedList.html">LinkedList
       <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#tuple-structs">Tuple&nbsp;struct
       <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#structs">Struct
       <td><a href="https://doc.rust-lang.org/book/first-edition/enums.html">Enum
