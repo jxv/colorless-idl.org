@@ -5,6 +5,45 @@ Under construction
 <br />
 <br />
 
+<table .table .table-striped .table-condensed .table-bordered>
+  <thead>
+    <tr>
+      <th>
+        Field
+      <th>
+        Description
+      <th>
+        Example
+  <tbody>
+    <tr>
+      <td>
+        <code>"fluid"
+      <td>
+        Version of the transport with Fluid.
+      <td>
+        <code>{"major":0,"minor":0}
+    <tr>
+      <td>
+        <code>"version"
+      <td>
+        Not required. Version of the API. Forces version when present.
+      <td>
+        <code>{"major":0,"minor":0}
+    <tr>
+      <td>
+        <code>"pull"
+      <td>
+        Configuration for RPC style queries.
+      <td>
+        See below
+    <tr>
+      <td>
+        <code>"schema"
+      <td>
+        All the types and functions within the API.
+      <td>
+        See below
+
 <h2>
   Types
 
