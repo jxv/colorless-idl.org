@@ -129,7 +129,44 @@ Under construction
         <code>
           {"n":"List", "p":&lt;Type&gt;}
 <h2>
-  Pull Config
+  Pull (RPC-styled messaging) Configuration
+<table .table .table-striped .table-condensed .table-bordered>
+  <thead>
+    <tr>
+      <th>Field
+      <th>Description
+      <th>Example
+  <tbody>
 
+    <tr>
+      <td><code>"name"
+      <td>Name of the service.
+      <td><code>"HelloWorld"
+    <tr>
+      <td><code>"protocol"
+      <td>Protocol which the request will take place.
+      <td><code>"http"
+    <tr>
+      <td><code>"host"
+      <td>Location the request will target.
+      <td><code>"127.0.0.1"
+    <tr>
+      <td><code>"path"
+      <td>As it pertains to HTTP, the targeted endpoint.
+      <td><code>"/"
+    <tr>
+      <td><code>"port"
+      <td>Port the of the address.
+      <td><code>8000
+    <tr>
+      <td><code>"meta"
+      <td>Similar to the usage of HTTP headers,
+          such that it represents extra data that's attached to each request.
+          Values for identification is possible.
+      <td><code>"Unit"
+    <tr>
+      <td><code>"error"
+      <td>Potential error type if the request or query were to fail.
+      <td><code>"Unit"
 <h2>
   Schema
