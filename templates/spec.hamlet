@@ -170,3 +170,32 @@ Under construction
       <td><code>"Unit"
 <h2>
   Schema
+
+<h4>
+  Types
+
+<table .table .table-striped .table-condensed .table-bordered>
+  <thead>
+    <tr>
+      <th>Name
+      <th>Example
+  <tbody>
+    <tr>
+      <td>Wrap
+      <td><code>{"n":"Name","w":"String"}
+    <tr>
+      <td>Struct
+      <td><code>{"n":"Point","m":[{"x":"Int"},{"y":"Int"}]}
+    <tr>
+      <td>Enum
+      <td>
+        <code>
+          {<br/>
+          &nbsp;&nbsp;"n":"Color",<br />
+          &nbsp;&nbsp;"e":[<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"Red",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"Green",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"Blue",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
+          &nbsp;&nbsp;]<br />
+          }
