@@ -1,8 +1,30 @@
 <h1>
   Spec
-
-Under construction
 <br />
+
+<h2>
+  Example: Hello World
+
+<table .table .table-striped .table-condensed .table-bordered>
+  <tbody>
+    <tr>
+      <td>
+        <code style="background-color: transparent">
+          {<br/>
+          &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
+          &nbsp;&nbsp;"schema":[<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Hello", "m":{"who":"String"}, "o": "String"}<br />
+          &nbsp;&nbsp;],<br />
+          &nbsp;&nbsp;"pull": {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"meta": "Unit",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"protocol": "http",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"host": "localhost",<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080<br />
+          &nbsp;&nbsp;}<br />
+          }
+
 <br />
 
 <table .table .table-striped .table-condensed .table-bordered>
@@ -171,9 +193,6 @@ Under construction
 <h2>
   Schema
 
-<h4>
-  Types
-
 <table .table .table-striped .table-condensed .table-bordered>
   <thead>
     <tr>
@@ -189,7 +208,7 @@ Under construction
     <tr>
       <td>Enum
       <td>
-        <code>
+        <code style="background-color: transparent">
           {<br/>
           &nbsp;&nbsp;"n":"Color",<br />
           &nbsp;&nbsp;"e":[<br />
