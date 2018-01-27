@@ -122,8 +122,8 @@ Under construction
       <td>?
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/29">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/49">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -147,8 +147,8 @@ Under construction
       <td><a href="https://crystal-lang.org/api/0.24.1/JSON.html">JSON
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/30">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/50">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -171,8 +171,8 @@ Under construction
       <td><a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data">Serializer
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/31">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/51">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -195,8 +195,8 @@ Under construction
       <td><a href="https://dlang.org/phobos/std_json.html">json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/33">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/52">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -219,8 +219,8 @@ Under construction
       <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Encode">Encode</a>/<a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode">Decode</a>
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/32">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/53">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -243,8 +243,8 @@ Under construction
       <td><a href="http://fsharp.github.io/FSharp.Data/library/JsonProvider.html">JSON
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/34">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/54">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -267,8 +267,8 @@ Under construction
       <td><a href="https://golang.org/pkg/encoding/json/">json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/35">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/55">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -315,8 +315,8 @@ Under construction
       <td><a href="https://api.haxe.org/haxe/Json.html">Json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/36">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/56">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -339,8 +339,8 @@ Under construction
       <td><a href="https://github.com/ziman/lightyear">lightyear
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/37">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/57">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -363,8 +363,8 @@ Under construction
       <td>?
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/38">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/58">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -413,8 +413,8 @@ Under construction
       <td><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-j-s-o-n/index.html">JSON
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/39">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/59">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -438,8 +438,8 @@ Under construction
       <td><a href="https://nim-lang.org/docs/json.html">json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/40">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/60">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -463,8 +463,8 @@ Under construction
       <td>Native
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/41">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/68">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -488,8 +488,8 @@ Under construction
       <td><a href="https://github.com/mjambon/yojson">yojson
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/42">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/61">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -513,8 +513,8 @@ Under construction
       <td><a href="https://github.com/purescript-contrib/purescript-argonaut">argonaut
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/43">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/62">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -563,8 +563,8 @@ Under construction
       <td><a href="https://github.com/glennsl/bs-json">bs-json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/44">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/63">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -613,8 +613,8 @@ Under construction
       <td><a href="https://github.com/serde-rs/json">serde_json
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/45">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/64">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -638,8 +638,8 @@ Under construction
       <td><a href="https://stackoverflow.com/a/14442630">?
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/46">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/65">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -663,8 +663,8 @@ Under construction
       <td><a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/47">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/66">NYI
       <td>NYI
       <td>NYI
       <td>NYI
@@ -688,8 +688,8 @@ Under construction
       <td><a href="http://choly.ca/post/typescript-json/">Built-in
       <td>WIP
       <td>NYI
-      <td>NYI
-      <td>NYI
+      <td><a href="https://github.com/jxv/fluid/issues/48">NYI
+      <td><a href="https://github.com/jxv/fluid/issues/67">NYI
       <td>NYI
       <td>NYI
       <td>NYI
