@@ -634,7 +634,7 @@
       <td><a href="https://docs.scala-lang.org/overviews/core/value-classes.html">value&nbsp;classes
       <td><a href="https://docs.scala-lang.org/tour/case-classes.html">case&nbsp;class
       <td><a href="https://docs.scala-lang.org/tour/traits.html">sealed&nbsp;traits
-      <td><a href="https://stackoverflow.com/a/14442630">?
+      <td><a href="https://json4s.org">json4s
       <td>WIP
       <td>NYI
       <td><a href="https://github.com/jxv/fluid/issues/46">NYI
