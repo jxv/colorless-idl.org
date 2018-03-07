@@ -13,7 +13,7 @@
           {<br/>
           &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
           &nbsp;&nbsp;"schema":[<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Hello", "m":{"who":"String"}, "o": "String"}<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Hello", "m":[{"who":"String"}], "o": "String"}<br />
           &nbsp;&nbsp;],<br />
           &nbsp;&nbsp;"pull": {<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
