@@ -114,6 +114,13 @@
 
             <tr>
               <td>
+                <b>Web Integration
+              <td>
+                <p>
+                  <b>Fluid</b> piggy-backs off existing web frameworks or libraries using a single endpoint.
+
+            <tr>
+              <td>
                 <b>Documentation
               <td>
                 <p>

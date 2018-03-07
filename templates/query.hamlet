@@ -68,28 +68,28 @@ JSON adequately satisfies them.
 <h2> Sandboxed Runtimes
 <br />
 
-At the price of flexbility, running client code on the server can risk vulernabilities.
+At the price of flexbility, running client code on the server can risk <b>vulernabilities</b>.
 Such code is sandboxed.
-The running code is under full control of the server with a few hooks in place.
-It's important to note that each request's query is always sandboxed separately.
-Variables are not carried over into parallel or sequential requests.
+The running code is under <b>full control</b> of the server with a few <b>hooks</b> in place.
+Each request's query is always sandboxed <b>separately</b>.
+Variables are <b>not</b> carried over into parallel or sequential requests.
 
 <h3> Authentication and Authorization
 <br />
 
-Because who sends the request should been know when restricting a sandbox's limits,
-request headers and the <code>"meta"</code> value, inside the request body, are passed through the meta middleware.
+Because who sends the request should been know when restricting a sandbox's <b>limits</b>,
+request headers and the <code>"meta"</code> value, inside the request body, are passed through the <b>meta middleware</b>.
 <br />
 <br />
 This is the most flexible approach.
 The server already decides how to authenticate and authorize at runtime.
-Those rules are as loose or strict and as static or dynamic as desired.
+Those rules are as <b>loose or strict</b> and as <b>static or dynamic</b> as desired.
 How that happens should remain a mystery to the sandboxed runtime.
 It's no business of any API code to directly deal with authentication and authorization logic.
 
 <h2> Types
 
-As a part of being small, the query language has its own idioms which work along with the nature of JSON.
+As a part of being small, the <b>query language</b> has its own idioms which work along with the nature of <b>JSON</b>.
 
 <h4> null
 
