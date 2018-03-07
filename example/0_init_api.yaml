@@ -1,0 +1,23 @@
+fluid:
+  major: 0
+  minor: 0
+
+pull:
+  name: Library
+  protocol: http
+  host: localhost
+  port: 80
+  path: /api/fluid
+  meta: Unit
+  error: Unit
+
+schema:
+  Author: String
+  Title: String
+  Isbn: String
+  Book:
+    m: [author: Author, title: Title, isbn: Isbn]
+
+  FindByAuthor:
+    m: [author: Author]
+    o: {n: List, p: Book}

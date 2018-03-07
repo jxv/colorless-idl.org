@@ -124,7 +124,7 @@ Offical support for YAML is in the backlog.
       <th>
         Description
       <th>
-        Example
+        Example (JSON)
   <tbody>
     <tr>
       <td>
@@ -159,7 +159,9 @@ Offical support for YAML is in the backlog.
 <h2>
   Types
 <br />
-
+Fluid has built-in primitive and collection types.
+<br />
+<br />
 <table .table .table-striped .table-condensed .table-bordered>
   <thead>
     <tr>
@@ -251,7 +253,7 @@ Offical support for YAML is in the backlog.
     <tr>
       <th>Field
       <th>Description
-      <th>Example
+      <th>Example (JSON)
   <tbody>
 
     <tr>
@@ -293,8 +295,8 @@ Offical support for YAML is in the backlog.
   <thead>
     <tr>
       <th>Name
-      <th>Example
-      <th>Sugar
+      <th>Example (JSON)
+      <th>Sugar (JSON)
   <tbody>
     <tr>
       <td>Wrap
