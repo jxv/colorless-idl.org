@@ -5,7 +5,6 @@
 /status StatusR GET
 /spec SpecR GET
 /languages LangsR GET
-/design DesignR GET
 /query QueryR GET
 /evolution EvolutionR GET
-/integrate IntegrateR GET
+/how-to IntegrateR GET

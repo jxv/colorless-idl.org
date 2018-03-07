@@ -4,39 +4,144 @@
         <div .row>
             <h1 .header>
                 <img id="input" src=@{StaticR img_logo_png} height="140px" width="310px" alt="Fluid"/>
-
-            <br />
-            <div style="color:#fff;">
-              Code-generated, Auto-versioned, &amp; Programmable Web APIs
             <br />
             <br />
-
+            <br />
+            <br />
+            <div style="background: #111; box-shadow: inset 0 0 10px #000000; width: auto; display:inline-block; border-radius: 5px">
+              <br />
+              <p style="color:#fff; font-family: monospace">
+                Download API Generator v0.0.0
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <a class="btn btn-success" href="https://github.com/jxv/fluid/releases/download/v0.0.0/fluid-osx" role="button">OSX (64-bit)</a>
+              &nbsp;
+              &nbsp;
+              <a class="btn btn-success" href="https://github.com/jxv/fluid/releases/download/v0.0.0/fluid-linux" role="button">Linux (64-bit)</a>
+              &nbsp;
+              &nbsp;
+              <a class="btn btn-success" href="https://github.com/jxv/fluid/releases/download/v0.0.0/fluid.exe" role="button">Windows (64-bit)</a>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
 <div .container>
-    <center>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h3 style="font-family: Pacifico, cursive;">
-            Create resilient and flexible APIs with ease.
-        <br />
-        <br />
-        <br />
-
-    <hr>
+  <center>
       <br />
       <br />
+      <br />
+      <br />
+      <h2 style="font-family: Pacifico, cursive;">
+          Create
+      <br />
+      <br />
+      <h3>
+          Code-generated, Auto-versioned, &amp; Programmable Web APIs
+      <br />
+      <br />
+      <br />
+      <br />
+    <hr style="height:0px;border-top:1px;border-style:dashed;border-color:#d80e22" />
+    <br />
+    <br />
+    <br />
+    <br />
+  <div .row>
+    <div style="font-size: 2.8em">
+      <center>
+        <b>Fluid</b> is a low-opininated, always integrable, and innovative API system.
+        To ensure a long-running and evolving system, all constraints are balanced to fit.
+      <br />
+      <br />
+  <hr style="height:0px;border-top:1px;border-style:dashed;border-color:#d80e22" />
+  <div .row>
       <br />
       <br />
       <center>
-        <h1>
-          Core Features
-        <br />
-        <br />
-        <br />
-        <br />
-        <img src=@{StaticR img_info_png} alt="Fluid" height="616px" width="535px" />
+        <h1 style="font-family: Pacifico, cursive;">
+          Features
+      <br />
+      <br />
+      <div .col .col-md-8 .col-md-offset-2>
+        <table .table .table-striped style="font-size: 1.4em">
+          <tbody>
+            <tr>
+              <td>
+                <b>Generation
+              <td>
+                <p>
+                  As an <b><a href="https://en.wikipedia.org/wiki/Interface_description_language">IDL</a></b>, code is generated from a spec for the client and server.
+                  Add-on libraries are available to help translate and run queries.
+
+            <tr>
+              <td>
+                <b>Versioning
+              <td>
+                <p>
+                  <b>Fluid</b> generates an automated and <b>semantic</b>-version dispatcher,
+                  so APIs can freely progress while supporting older versions.
+
+            <tr>
+              <td>
+                <b>Query language
+              <td>
+                <p>
+                  If the client doesn't generate code,
+                  writing the <b>query language</b> manually is an easy alternative.
+                  Plus, there's aggressive support for <b>sum types</b>/<b>algebraic types</b>/<b>union types</b>.
+
+            <tr>
+              <td>
+                <b>Programmable
+              <td>
+                <p>
+                  The <b>query language</b> is a <b>programming language</b>.
+                  Any unexpected expressions aren't otherwise constrained.
+
+            <tr>
+              <td>
+                <b>Protocol Agnostic
+              <td>
+                <p>
+                  Not bound to <b>HTTP</b>(S), <b>Websockets</b>, or any other protocol.
+                  The only requirement is reading and writing <b>JSON</b>.
+
+            <tr>
+              <td>
+                <b>Documentation
+              <td>
+                <p>
+                  It's a <b>given</b>.
+                  The process is exact to generating for a language.
+
+            <tr>
+              <td>
+                <b>Schema
+              <td>
+                <p>
+                  <b>Fluid</b> does <b>not</b> follow the <b><a href="https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0">OpenAPI</a></b> spec.
+                  <b>Fluid</b> has its own approach with straight-forward and narrow goals.
+                  It's not a "one-size fits all" schema with historical baggage.
+                  The result is less syntactic cruft.
+            <tr>
+              <td>
+                <b>Tooling
+              <td>
+                <p>
+                  With spartan spec and query language in a widely used format,
+                  the barrier for tooling is very low.
+
+            <tr>
+              <td>
+                <b>Discoverability
+              <td>
+                <p>
+                  The complete and supported specs of an <b>API</b> is obtained with a <b>GET</b> at the same endpoint of <b>POST</b>'ing queries.
 <br />
 <br />

@@ -116,16 +116,16 @@ instance Yesod App where
                     , menuItemAccessCallback = True
                     }
                 , NavbarLeft $ MenuItem
-                    { menuItemLabel = "Design"
-                    , menuItemRoute = Left DesignR
-                    , menuItemAccessCallback = True
-                    }
-                , NavbarLeft $ MenuItem
-                    { menuItemLabel = "Integrate"
+                    { menuItemLabel = "How To"
                     , menuItemRoute = Left IntegrateR
                     , menuItemAccessCallback = True
                     }
-                , NavbarLeft $ MenuItem
+                , NavbarRight $ MenuItem
+                    { menuItemLabel = "#Fluid on Slack"
+                    , menuItemRoute = Right "http://slack.httpapis.com/"
+                    , menuItemAccessCallback = True
+                    }
+                , NavbarRight $ MenuItem
                     { menuItemLabel = "GitHub"
                     , menuItemRoute = Right "https://github.com/jxv/fluid"
                     , menuItemAccessCallback = True

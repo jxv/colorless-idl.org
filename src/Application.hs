@@ -41,7 +41,6 @@ import Handler.Home
 import Handler.Status
 import Handler.Spec
 import Handler.Langs
-import Handler.Design
 import Handler.Query
 import Handler.Evolution
 import Handler.Integrate
