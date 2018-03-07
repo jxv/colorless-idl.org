@@ -60,7 +60,7 @@ each one has a unique and proven story (or stories) for serializing and deserial
 By using an existing transport format, an entire and crucial class of the work is avoided.
 <br />
 <br />
-These reasons, which commit that the transport format is a first-class priority, are balanceable constraints.
+These reasons, which commit that the transport format is a first-class priority, derive from worthy constraints.
 JSON adequately satisfies them.
 <br />
 <br />
@@ -77,16 +77,15 @@ Variables are not carried over into parallel or sequential requests.
 <h3> Authentication and Authorization
 <br />
 
-Because who sends the request is a useful detail to the degree of restricting a sandbox's limits,
-request headers and the <code>"meta"</code> value, inside the request body, are available when sandboxing.
-They are passed through the meta middleware.
+Because who sends the request should been know when restricting a sandbox's limits,
+request headers and the <code>"meta"</code> value, inside the request body, are passed through the meta middleware.
 <br />
 <br />
 This is the most flexible approach.
 The server already decides how to authenticate and authorize at runtime.
 Those rules are as loose or strict and as static or dynamic as desired.
 How that happens should remain a mystery to the sandboxed runtime.
-It's no business of any API code to directly deal with authentication and authorization logic. 
+It's no business of any API code to directly deal with authentication and authorization logic.
 
 <h2> Types
 
