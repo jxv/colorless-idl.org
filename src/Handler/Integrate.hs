@@ -10,5 +10,5 @@ import Import
 getIntegrateR :: Handler Html
 getIntegrateR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "integrate")

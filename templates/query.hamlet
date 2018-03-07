@@ -44,49 +44,49 @@ There are few reasons to shape up JSON from a transport format into a programmin
 <br />
 1. Many existing tools for dealing with Web APIs are designed with JSON in mind.
 And from a purely practical perspective, not all programming languages currently have a Fluid implementation.
-But all languages can already interact with a JSON API.
-This possibility forces an additional constraint for clear readability.
+But all languages can interact with a JSON-based web API.
+This enforces an additional constraint for readable transport.
 <br />
 <br />
 2. Users of generated clients don't care about the transport format.
 And they shouldn't care (unless something goes wrong).
 There's no need to reinvent the wheel of another transport format.
-Moving away from JSON will only upset those with existing tools and non-generated clients.
+Moving away from JSON will only impede those with existing web tools and non-generated clients.
 JSON is the widely accepted norm.
 <br />
 <br />
 3. Because all languages can interact with a JSON API,
-each one has a unique and existing story for serializing and deserializing JSON.
-By using JSON, an entire and crucial class of the work is avoided.
-Mostly what's left is integrations with a server runtime and a client AST generator.
-Neither implementations are triviality regardless of language.
+each one has a unique and proven story (or stories) for serializing and deserializing the format.
+By using an existing transport format, an entire and crucial class of the work is avoided.
 <br />
 <br />
-These are valid enough reasons to commit that the transport format is a first-class priority.
-JSON, the transport format and now programming language, adequately satisfies them.
+These reasons, which commit that the transport format is a first-class priority, are balanceable constraints.
+JSON adequately satisfies them.
 <br />
 <br />
 
 <h2> Sandboxed Runtimes
 <br />
 
-At the price of flexbility, running client code on the server risks vulernabilities.
-Such code should be sandboxed.
-And it is under full control of the server with a few hooks.
-Each request's query is always sandboxed separately.
+At the price of flexbility, running client code on the server can risk vulernabilities.
+Such code is sandboxed.
+The running code is under full control of the server with a few hooks in place.
+It's important to note that each request's query is always sandboxed separately.
+Variables are not carried over into parallel or sequential requests.
 
 <h3> Authentication and Authorization
 <br />
 
-Because who sends the request is key detail for managing a sandbox,
-request headers and the <code>"meta"</code> inside the request body are available when sandboxing.
+Because who sends the request is a useful detail to the degree of restricting a sandbox's limits,
+request headers and the <code>"meta"</code> value, inside the request body, are available when sandboxing.
+They are passed through the meta middleware.
 <br />
 <br />
 This is the most flexible approach.
 The server already decides how to authenticate and authorize at runtime.
-How that happens is mystery to the sandboxed runtime.
-It's really no business of any Fluid code to know how.
-Rules can be loose or strict and static or dynamic as desired.
+Those rules are as loose or strict and as static or dynamic as desired.
+How that happens should remain a mystery to the sandboxed runtime.
+It's no business of any API code to directly deal with authentication and authorization logic. 
 
 <h2> Types
 
@@ -117,12 +117,12 @@ Nonsensical and a rarity, nested <code>Option</code> types are discouraged.
 
 <h2> Built-in functions
 
-<h3> if
+<h4> if
 
-<h3> do
+<h4> do
 
-<h3> def
+<h4> def
 
-<h3> fn
+<h4> fn
 
-<h3> match
+<h4> match

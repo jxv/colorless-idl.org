@@ -10,5 +10,5 @@ import Import
 getDesignR :: Handler Html
 getDesignR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "design")

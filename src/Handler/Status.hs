@@ -10,5 +10,5 @@ import Import
 getStatusR :: Handler Html
 getStatusR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "status")

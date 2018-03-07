@@ -1,20 +1,34 @@
 <h1>
   Spec
 <br />
+<br />
+
+Fluid's <span style="font-weight: bold">spec</span> describes the configuration and schema for communication.
+Officially, Fluid supports JSON as the spec format.
+As an alternative, converting a YAML spec into JSON is encouraged.
+Offical support for YAML is in the backlog.
+
+<br />
+<br />
 
 <h2>
-  Example: Hello World
+  Example
+
+<br />
+
+<span style="font-weight: bold">
+  HelloWorld in JSON
+
+<br />
+<br />
 
 <table .table .table-striped .table-condensed .table-bordered>
   <tbody>
     <tr>
       <td>
         <code style="background-color: transparent">
-          {<br/>
+          {<br />
           &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
-          &nbsp;&nbsp;"schema":[<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Hello", "m":[{"who":"String"}], "o": "String"}<br />
-          &nbsp;&nbsp;],<br />
           &nbsp;&nbsp;"pull": {<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit",<br />
@@ -22,9 +36,84 @@
           &nbsp;&nbsp;&nbsp;&nbsp;"protocol": "http",<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"host": "localhost",<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080<br />
+          &nbsp;&nbsp;},<br />
+          &nbsp;&nbsp;"schema":{<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;"Hello": {"m":[{"who":"String"}], "o": "String"}<br />
           &nbsp;&nbsp;}<br />
           }
+<br />
 
+<span style="font-weight: bold">
+  HelloWorld in YAML
+
+<br />
+<br />
+
+<table .table .table-striped .table-condensed .table-bordered>
+  <tbody>
+    <tr>
+      <td>
+        <code style="background-color: transparent">
+          fluid:<br />
+          &nbsp;&nbsp;major: 0<br />
+          &nbsp;&nbsp;minor: 0<br />
+          pull:<br />
+          &nbsp;&nbsp;name: HelloWorld<br />
+          &nbsp;&nbsp;error: Unit<br />
+          &nbsp;&nbsp;meta: Unit<br />
+          &nbsp;&nbsp;protocol: http<br />
+          &nbsp;&nbsp;host: localhost<br />
+          &nbsp;&nbsp;port: 8080<br />
+          schema:<br />
+          &nbsp;&nbsp;Hello:<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;m: [who: String]<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;o: String<br />
+
+<br />
+<h3>
+  YAML to JSON
+<br />
+<span style="font-weight: bold">
+  Shell script (needs Ruby installed)
+<br />
+<br />
+<table .table .table-striped .table-condensed .table-bordered>
+  <tbody>
+    <tr>
+      <td>
+        <code style="background-color: transparent">
+          yaml2json () {<br />
+          &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
+          }<br />
+          <br />
+          yaml2json < "api.yaml" > "api.json"
+
+<br />
+<span style="font-weight: bold">
+  Looping over many YAMLs
+<br />
+<br />
+<table .table .table-striped .table-condensed .table-bordered>
+  <tbody>
+    <tr>
+      <td>
+        <code style="background-color: transparent">
+          yaml2json () {<br />
+          &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
+          }<br />
+          <br />
+          for i in api-yaml/*.yaml; do<br />
+          &nbsp;&nbsp;[ -f "$yaml" ] || break<br />
+          &nbsp;&nbsp;echo $yaml<br />
+          &nbsp;&nbsp;json=`basename $yaml .yaml`.json<br />
+          &nbsp;&nbsp;yaml2json < $yaml > "api-json/$json"<br />
+          done<br />
+
+<br />
+<br />
+
+<h2>
+  Top level
 <br />
 
 <table .table .table-striped .table-condensed .table-bordered>
@@ -66,8 +155,10 @@
       <td>
         See below
 
+<br />
 <h2>
   Types
+<br />
 
 <table .table .table-striped .table-condensed .table-bordered>
   <thead>
@@ -150,8 +241,11 @@
       <td>
         <code>
           {"n":"List", "p":&lt;Type&gt;}
+<br />
 <h2>
-  Pull (RPC-styled messaging) Configuration
+  Pull (RPC) Configuration
+<br />
+
 <table .table .table-striped .table-condensed .table-bordered>
   <thead>
     <tr>
@@ -190,31 +284,42 @@
       <td><code>"error"
       <td>Potential error type if the request or query were to fail.
       <td><code>"Unit"
+<br />
 <h2>
   Schema
+<br />
 
 <table .table .table-striped .table-condensed .table-bordered>
   <thead>
     <tr>
       <th>Name
       <th>Example
+      <th>Sugar
   <tbody>
     <tr>
       <td>Wrap
-      <td><code>{"n":"Name","w":"String"}
+      <td><code>"Name":{"w":"String"}
+      <td><code>"Name":"String"
     <tr>
       <td>Struct
-      <td><code>{"n":"Point","m":[{"x":"Int"},{"y":"Int"}]}
+      <td><code>"Point":{"m":[{"x":"Int"},{"y":"Int"}]}
     <tr>
       <td>Enum
       <td>
         <code style="background-color: transparent">
-          {<br/>
-          &nbsp;&nbsp;"n":"Color",<br />
+          "Color": {<br />
           &nbsp;&nbsp;"e":[<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"Red",<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"Green",<br />
           &nbsp;&nbsp;&nbsp;&nbsp;"Blue",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;{"n":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
           &nbsp;&nbsp;]<br />
           }
+      <td>
+        <code style="background-color: transparent">
+          "Color": [<br />
+          &nbsp;&nbsp;"Red",<br />
+          &nbsp;&nbsp;"Green",<br />
+          &nbsp;&nbsp;"Blue",<br />
+          &nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
+          ]<br />

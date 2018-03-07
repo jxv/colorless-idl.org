@@ -10,5 +10,5 @@ import Import
 getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "homepage")

@@ -5,9 +5,9 @@
             <h1 .header>
                 <img id="input" src=@{StaticR img_logo_png} height="140px" width="310px" alt="Fluid"/>
 
+            <br />
             <div style="color:#fff;">
-              The Programmatic IDL
-
+              Code-generated, Auto-versioned, &amp; Programmable Web APIs
             <br />
             <br />
 

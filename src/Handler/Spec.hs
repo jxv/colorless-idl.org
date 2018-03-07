@@ -10,5 +10,5 @@ import Import
 getSpecR :: Handler Html
 getSpecR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "spec")

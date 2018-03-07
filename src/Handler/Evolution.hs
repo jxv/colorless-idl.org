@@ -10,5 +10,5 @@ import Import
 getEvolutionR :: Handler Html
 getEvolutionR = do
     defaultLayout $ do
-        setTitle "Fluid | The Programmatic IDL"
+        setTitle "Fluid IDL"
         $(widgetFile "evolution")
