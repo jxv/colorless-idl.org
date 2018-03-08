@@ -1,127 +1,130 @@
-<h1>
-  Query
+<div .container>
+  <div .row>
+    <div .col .col-md .col-md-10 .col-md-offset-1>
+      <h1>
+        Query
 
-<br />
-<br />
+      <br />
+      <br />
 
-Fluid's <span style="font-weight: bold">query language</span> is a simple and complete <span style="font-weight: bold">programming language</span>.
-The query language, partially inspired by LISP, has roots in functional programming.
+      <b>Fluid</b>'s <b>query language</b> is a simple and complete <b>programming language</b>.
+      The <b>query language</b>, partially inspired by LISP, has roots in functional programming.
 
-<br />
-<br />
+      <br />
+      <br />
 
-<h2> Request Body
-<br />
+      <h2> Request Body
+      <br />
 
-Interaction with a Fluid API is through the <code>"query"</code> portion of the JSON request body.
-Code in the query language should be placed here.
+      Interaction with a <b>Fluid</b> <b>API</b> is through the <code>"query"</code> portion of the <b>JSON</b> request body.
+      Code in the <b>query language</b> should be placed here.
 
-<br />
-<br />
+      <br />
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          {<br/>
-          &nbsp;&nbsp;"fluid": {"major": 0, "minor": 0},<br/>
-          &nbsp;&nbsp;"version": {"major": 0, "minor": 0},<br/>
-          &nbsp;&nbsp;"meta": &lt;META_HERE&gt;,<br/>
-          &nbsp;&nbsp;"query": <span style="background-color: #ff0">&lt;QUERY_HERE&gt;</span><br/>
-          }
-<br />
-<br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                {<br/>
+                &nbsp;&nbsp;"fluid": {"major": 0, "minor": 0},<br/>
+                &nbsp;&nbsp;"version": {"major": 0, "minor": 0},<br/>
+                &nbsp;&nbsp;"meta": &lt;META_HERE&gt;,<br/>
+                &nbsp;&nbsp;"query": <span style="background-color: #ff0">&lt;QUERY_HERE&gt;</span><br/>
+                }
+      <br />
+      <br />
 
-<h2> JSON
-<br />
+      <h2> JSON
+      <br />
 
-For better or worse, the query language is in JSON.
-<br />
-<br />
-There are few reasons to shape up JSON from a transport format into a programming language -- opposed to creating a query language with a different syntax.
-<br />
-<br />
-1. Many existing tools for dealing with Web APIs are designed with JSON in mind.
-And from a purely practical perspective, not all programming languages currently have a Fluid implementation.
-But all languages can interact with a JSON-based web API.
-This enforces an additional constraint for readable transport.
-<br />
-<br />
-2. Users of generated clients don't care about the transport format.
-And they shouldn't care (unless something goes wrong).
-There's no need to reinvent the wheel of another transport format.
-Moving away from JSON will only impede those with existing web tools and non-generated clients.
-JSON is the widely accepted norm.
-<br />
-<br />
-3. Because all languages can interact with a JSON API,
-each one has a unique and proven story (or stories) for serializing and deserializing the format.
-By using an existing transport format, an entire and crucial class of the work is avoided.
-<br />
-<br />
-These reasons, which commit that the transport format is a first-class priority, derive from worthy constraints.
-JSON adequately satisfies them.
-<br />
-<br />
+      For better or worse, the <b>query language</b> is in <b>JSON</b>.
+      <br />
+      <br />
+      There are few reasons to shape up <b>JSON</b> from a transport format into a programming language -- opposed to creating a <b>query language</b> with a different syntax.
+      <br />
+      <br />
+      1. Many existing tools for dealing with Web <b>APIs</b> are designed with <b>JSON</b> in mind.
+      And from a purely practical perspective, not all programming languages currently have a <b>Fluid</b> implementation.
+      But all languages can interact with a <b>JSON</b>-based web <b>API</b>.
+      This enforces an additional constraint for readable transport.
+      <br />
+      <br />
+      2. Users of generated clients don't care about the transport format.
+      And they shouldn't care (unless something goes wrong).
+      There's no need to reinvent the wheel of another transport format.
+      Moving away from <b>JSON</b> will only impede those with existing web tools and non-generated clients.
+      <b>JSON</b> is the widely accepted norm.
+      <br />
+      <br />
+      3. Because all languages can interact with a <b>JSON</b> <b>API</b>,
+      each one has a unique and proven story (or stories) for serializing and deserializing the format.
+      By using an existing transport format, an entire and crucial class of the work is avoided.
+      <br />
+      <br />
+      These reasons, which commit that the transport format is a first-class priority, derive from worthy constraints.
+      <b>JSON</b> adequately satisfies them.
+      <br />
+      <br />
 
-<h2> Sandboxed Runtimes
-<br />
+      <h2> Sandboxed Runtimes
+      <br />
 
-At the price of flexbility, running client code on the server can risk <b>vulernabilities</b>.
-Such code is sandboxed.
-The running code is under <b>full control</b> of the server with a few <b>hooks</b> in place.
-Each request's query is always sandboxed <b>separately</b>.
-Variables are <b>not</b> carried over into parallel or sequential requests.
+      At the price of flexbility, running client code on the server can risk <b>vulernabilities</b>.
+      Such code is sandboxed.
+      The running code is under <b>full control</b> of the server with a few <b>hooks</b> in place.
+      Each request's query is always sandboxed <b>separately</b>.
+      Variables are <b>not</b> carried over into parallel or sequential requests.
 
-<h3> Authentication and Authorization
-<br />
+      <h3> Authentication and Authorization
+      <br />
 
-Because who sends the request should been know when restricting a sandbox's <b>limits</b>,
-request headers and the <code>"meta"</code> value, inside the request body, are passed through the <b>meta middleware</b>.
-<br />
-<br />
-This is the most flexible approach.
-The server already decides how to authenticate and authorize at runtime.
-Those rules are as <b>loose or strict</b> and as <b>static or dynamic</b> as desired.
-How that happens should remain a mystery to the sandboxed runtime.
-It's no business of any API code to directly deal with authentication and authorization logic.
+      Because who sends the request should been know when restricting a sandbox's <b>limits</b>,
+      request headers and the <code>"meta"</code> value, inside the request body, are passed through the <b>meta middleware</b>.
+      <br />
+      <br />
+      This is the most flexible approach.
+      The server already decides how to <b>authenticate</b> and <b>authorize</b> at runtime.
+      Those rules are as <b>loose or strict</b> and as <b>static or dynamic</b> as desired.
+      How that happens should remain a mystery to the sandboxed runtime.
+      It's no business of any <b>API</b> code to directly deal with authentication and authorization logic.
 
-<h2> Types
+      <h2> Types
 
-As a part of being small, the <b>query language</b> has its own idioms which work along with the nature of <b>JSON</b>.
+      As a part of being small, the <b>query language</b> has its own idioms which work along with the nature of <b>JSON</b>.
 
-<h4> null
+      <h4> null
 
-<h3> Collections
+      <h3> Collections
 
-<h4> Option
+      <h4> Option
 
-Because every JSON value has the potential to be <code>null</code>, it's overloaded to represent the <code>None</code> of <code>Option</code> values.
-This follows a common pattern of JSON translations with static languages.
-From It simples the underlying JSON value in a <code>Some</code> just to be itself.
-Nonsensical and a rarity, nested <code>Option</code> types are discouraged.
+      Because every <b>JSON</b> value has the potential to be <code>null</code>, it's overloaded to represent the <code>None</code> of <code>Option</code> values.
+      This follows a common pattern of <b>JSON</b> translations with static languages.
+      From It simples the underlying <b>JSON</b> value in a <code>Some</code> just to be itself.
+      Nonsensical and a rarity, nested <code>Option</code> types are discouraged.
 
-<h4> Tuple
+      <h4> Tuple
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
 
-<h4> List
+      <h4> List
 
 
-<h2> Built-in functions
+      <h2> Built-in functions
 
-<h4> if
+      <h4> if
 
-<h4> do
+      <h4> do
 
-<h4> def
+      <h4> def
 
-<h4> fn
+      <h4> fn
 
-<h4> match
+      <h4> match

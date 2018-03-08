@@ -1,15 +1,12 @@
   <div .container>
-      <!-- Starting
-          ================================================== -->
-      <div .row>
-          <div .col-lg-12>
-              <div .page-header>
-                  <h1 #start>Integrate into an existing API
-                  Under construction
-                  <br />
-                  <br />
-                  <ol>
-                      <li>Create an endpoint
-                      <li>Add integration code, and inject headers into meta middleware
-                      <li>Fill spec with schema
-                      <li>Generate and implement
+    <div .row>
+      <div .col .col-md-10 .col-md-offset-1>
+          <h1>Integrate into an existing API
+          <br />
+          <br />
+          <ol>
+              <li>Create an endpoint
+              <li>Add integration code
+              <li>Inject headers into meta middleware
+              <li>Fill spec with schema
+              <li>Generate and implement

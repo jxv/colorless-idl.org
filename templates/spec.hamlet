@@ -1,327 +1,330 @@
-<h1>
-  Spec
-<br />
-<br />
+<div .container>
+  <div .row>
+    <div .col .col-md .col-md-10 .col-md-offset-1>
+      <h1>
+        Spec
+      <br />
+      <br />
 
-Fluid's <span style="font-weight: bold">spec</span> describes the configuration and schema for communication.
-Officially, Fluid supports JSON as the spec format.
-As an alternative, converting a YAML spec into JSON is encouraged.
-Offical support for YAML is in the backlog.
+      <b>Fluid</b>'s <span style="font-weight: bold">spec</span> describes the hosting configuration and schema for communication.
+      Officially, <b>Fluid</b> supports <b>JSON</b> as the spec format.
+      As an alternative, converting a <b>YAML</b> spec into <b>JSON</b> is encouraged.
+      (Offical support for <b>YAML</b> is in the backlog.)
 
-<br />
-<br />
+      <br />
+      <br />
 
-<h2>
-  Example
+      <h2>
+        Example
 
-<br />
+      <br />
 
-<span style="font-weight: bold">
-  HelloWorld in JSON
+      <span style="font-weight: bold">
+        HelloWorld in JSON
 
-<br />
-<br />
+      <br />
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          {<br />
-          &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
-          &nbsp;&nbsp;"pull": {<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"meta": "Unit",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"protocol": "http",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"host": "localhost",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080<br />
-          &nbsp;&nbsp;},<br />
-          &nbsp;&nbsp;"schema":{<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"Hello": {"m":[{"who":"String"}], "o": "String"}<br />
-          &nbsp;&nbsp;}<br />
-          }
-<br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                {<br />
+                &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
+                &nbsp;&nbsp;"pull": {<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"meta": "Unit",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"protocol": "http",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"host": "localhost",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080<br />
+                &nbsp;&nbsp;},<br />
+                &nbsp;&nbsp;"schema":{<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"Hello": {"m":[{"who":"String"}], "o": "String"}<br />
+                &nbsp;&nbsp;}<br />
+                }
+      <br />
 
-<span style="font-weight: bold">
-  HelloWorld in YAML
+      <span style="font-weight: bold">
+        HelloWorld in YAML
 
-<br />
-<br />
+      <br />
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          fluid:<br />
-          &nbsp;&nbsp;major: 0<br />
-          &nbsp;&nbsp;minor: 0<br />
-          pull:<br />
-          &nbsp;&nbsp;name: HelloWorld<br />
-          &nbsp;&nbsp;error: Unit<br />
-          &nbsp;&nbsp;meta: Unit<br />
-          &nbsp;&nbsp;protocol: http<br />
-          &nbsp;&nbsp;host: localhost<br />
-          &nbsp;&nbsp;port: 8080<br />
-          schema:<br />
-          &nbsp;&nbsp;Hello:<br/>
-          &nbsp;&nbsp;&nbsp;&nbsp;m: [who: String]<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;o: String<br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                fluid:<br />
+                &nbsp;&nbsp;major: 0<br />
+                &nbsp;&nbsp;minor: 0<br />
+                pull:<br />
+                &nbsp;&nbsp;name: HelloWorld<br />
+                &nbsp;&nbsp;error: Unit<br />
+                &nbsp;&nbsp;meta: Unit<br />
+                &nbsp;&nbsp;protocol: http<br />
+                &nbsp;&nbsp;host: localhost<br />
+                &nbsp;&nbsp;port: 8080<br />
+                schema:<br />
+                &nbsp;&nbsp;Hello:<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;m: [who: String]<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;o: String<br />
 
-<br />
-<h3>
-  YAML to JSON
-<br />
-<span style="font-weight: bold">
-  Shell script (needs Ruby installed)
-<br />
-<br />
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          yaml2json () {<br />
-          &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
-          }<br />
-          <br />
-          yaml2json < "api.yaml" > "api.json"
+      <br />
+      <h3>
+        YAML to JSON
+      <br />
+      <span style="font-weight: bold">
+        Shell script (needs Ruby installed)
+      <br />
+      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                yaml2json () {<br />
+                &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
+                }<br />
+                <br />
+                yaml2json < "api.yaml" > "api.json"
 
-<br />
-<span style="font-weight: bold">
-  Looping over many YAMLs
-<br />
-<br />
-<table .table .table-striped .table-condensed .table-bordered>
-  <tbody>
-    <tr>
-      <td>
-        <code style="background-color: transparent">
-          yaml2json () {<br />
-          &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
-          }<br />
-          <br />
-          for i in api-yaml/*.yaml; do<br />
-          &nbsp;&nbsp;[ -f "$yaml" ] || break<br />
-          &nbsp;&nbsp;echo $yaml<br />
-          &nbsp;&nbsp;json=`basename $yaml .yaml`.json<br />
-          &nbsp;&nbsp;yaml2json < $yaml > "api-json/$json"<br />
-          done<br />
+      <br />
+      <span style="font-weight: bold">
+        Looping over many YAMLs
+      <br />
+      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                yaml2json () {<br />
+                &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
+                }<br />
+                <br />
+                for i in api-yaml/*.yaml; do<br />
+                &nbsp;&nbsp;[ -f "$yaml" ] || break<br />
+                &nbsp;&nbsp;echo $yaml<br />
+                &nbsp;&nbsp;json=`basename $yaml .yaml`.json<br />
+                &nbsp;&nbsp;yaml2json < $yaml > "api-json/$json"<br />
+                done<br />
 
-<br />
-<br />
+      <br />
+      <br />
 
-<h2>
-  Top level
-<br />
+      <h2>
+        Top level
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <thead>
-    <tr>
-      <th>
-        Field
-      <th>
-        Description
-      <th>
-        Example (JSON)
-  <tbody>
-    <tr>
-      <td>
-        <code>"fluid"
-      <td>
-        Version of the transport with Fluid.
-      <td>
-        <code>{"major":0,"minor":0}
-    <tr>
-      <td>
-        <code>"version"
-      <td>
-        Not required. Version of the API. Forces version when present.
-      <td>
-        <code>{"major":0,"minor":0}
-    <tr>
-      <td>
-        <code>"pull"
-      <td>
-        Configuration for RPC style queries.
-      <td>
-        See below
-    <tr>
-      <td>
-        <code>"schema"
-      <td>
-        All the types and functions within the API.
-      <td>
-        See below
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <th>
+              Field
+            <th>
+              Description
+            <th>
+              Example (JSON)
+        <tbody>
+          <tr>
+            <td>
+              <code>"fluid"
+            <td>
+              Version of the transport with Fluid.
+            <td>
+              <code>{"major":0,"minor":0}
+          <tr>
+            <td>
+              <code>"version"
+            <td>
+              Not required. Version of the API. Forces version when present.
+            <td>
+              <code>{"major":0,"minor":0}
+          <tr>
+            <td>
+              <code>"pull"
+            <td>
+              Configuration for RPC style queries.
+            <td>
+              See below
+          <tr>
+            <td>
+              <code>"schema"
+            <td>
+              All the types and functions within the API.
+            <td>
+              See below
 
-<br />
-<h2>
-  Types
-<br />
-Fluid has built-in primitive and collection types.
-<br />
-<br />
-<table .table .table-striped .table-condensed .table-bordered>
-  <thead>
-    <tr>
-      <th>
-        Name
-      <th>
-        Description
-      <th>
-        Schema Type (JSON)
-  <tbody>
-    <tr>
-      <td>
-        Unit
-      <td>
-        Non-meaningful value
-      <td>
-        <code>
-          "Unit"
+      <br />
+      <h2>
+        Types
+      <br />
+      <b>Fluid</b> supports a handful of built-in <b>primitive</b> and <b>collection</b> types.
+      <br />
+      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <th>
+              Name
+            <th>
+              Description
+            <th>
+              Schema Type (JSON)
+        <tbody>
+          <tr>
+            <td>
+              Unit
+            <td>
+              Non-meaningful value
+            <td>
+              <code>
+                "Unit"
 
-    <tr>
-      <td>
-        Int
-      <td>
-        32-bit integer
-      <td>
-        <code>
-          "Int"
+          <tr>
+            <td>
+              Int
+            <td>
+              32-bit integer
+            <td>
+              <code>
+                "Int"
 
-    <tr>
-      <td>
-        Float
-      <td>
-        64-bit floating point
-      <td>
-        <code>
-          "Float"
+          <tr>
+            <td>
+              Float
+            <td>
+              64-bit floating point
+            <td>
+              <code>
+                "Float"
 
-    <tr>
-      <td>
-        Char
-      <td>
-        Character supporting unicode
-      <td>
-        <code>
-          "Char"
+          <tr>
+            <td>
+              Char
+            <td>
+              Character supporting unicode
+            <td>
+              <code>
+                "Char"
 
-    <tr>
-      <td>
-        String
-      <td>
-        String of text supporting unicode
-      <td>
-        <code>
-          "String"
+          <tr>
+            <td>
+              String
+            <td>
+              String of text supporting unicode
+            <td>
+              <code>
+                "String"
 
-    <tr>
-      <td>
-        Option
-      <td>
-        Represents possible existence of a value (a.k.a. Nullable, Maybe, and Optional)
-      <td>
-        <code>
-          {"n":"Option", "p":&lt;Type&gt;}
+          <tr>
+            <td>
+              Option
+            <td>
+              Represents possible existence of a value (a.k.a. Nullable, Maybe, and Optional)
+            <td>
+              <code>
+                {"n":"Option", "p":&lt;Type&gt;}
 
-    <tr>
-      <td>
-        Either
-      <td>
-        Represents one of two possible values (a.k.a. Result)
-      <td>
-        <code>
-          {"n":"Either", "p":[&lt;Type&gt;,&lt;Type&gt;]}
+          <tr>
+            <td>
+              Either
+            <td>
+              Represents one of two possible values (a.k.a. Result)
+            <td>
+              <code>
+                {"n":"Either", "p":[&lt;Type&gt;,&lt;Type&gt;]}
 
-    <tr>
-      <td>
-        List
-      <td>
-        List of values
-      <td>
-        <code>
-          {"n":"List", "p":&lt;Type&gt;}
-<br />
-<h2>
-  Pull (RPC) Configuration
-<br />
+          <tr>
+            <td>
+              List
+            <td>
+              List of values
+            <td>
+              <code>
+                {"n":"List", "p":&lt;Type&gt;}
+      <br />
+      <h2>
+        Pull (RPC) Configuration
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <thead>
-    <tr>
-      <th>Field
-      <th>Description
-      <th>Example (JSON)
-  <tbody>
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <th>Field
+            <th>Description
+            <th>Example (JSON)
+        <tbody>
 
-    <tr>
-      <td><code>"name"
-      <td>Name of the service.
-      <td><code>"HelloWorld"
-    <tr>
-      <td><code>"protocol"
-      <td>Protocol which the request will take place.
-      <td><code>"http"
-    <tr>
-      <td><code>"host"
-      <td>Location the request will target.
-      <td><code>"127.0.0.1"
-    <tr>
-      <td><code>"path"
-      <td>As it pertains to HTTP, the targeted endpoint.
-      <td><code>"/"
-    <tr>
-      <td><code>"port"
-      <td>Port the of the address.
-      <td><code>8000
-    <tr>
-      <td><code>"meta"
-      <td>Similar to the usage of HTTP headers,
-          such that it represents extra data that's attached to each request.
-          Values for identification is possible.
-      <td><code>"Unit"
-    <tr>
-      <td><code>"error"
-      <td>Potential error type if the request or query were to fail.
-      <td><code>"Unit"
-<br />
-<h2>
-  Schema
-<br />
+          <tr>
+            <td><code>"name"
+            <td>Name of the service.
+            <td><code>"HelloWorld"
+          <tr>
+            <td><code>"protocol"
+            <td>Protocol which the request will take place.
+            <td><code>"http"
+          <tr>
+            <td><code>"host"
+            <td>Location the request will target.
+            <td><code>"127.0.0.1"
+          <tr>
+            <td><code>"path"
+            <td>As it pertains to HTTP, the targeted endpoint.
+            <td><code>"/"
+          <tr>
+            <td><code>"port"
+            <td>Port the of the address.
+            <td><code>8000
+          <tr>
+            <td><code>"meta"
+            <td>Similar to the usage of HTTP headers,
+                such that it represents extra data that's attached to each request.
+                Values for identification is possible.
+            <td><code>"Unit"
+          <tr>
+            <td><code>"error"
+            <td>Potential error type if the request or query were to fail.
+            <td><code>"Unit"
+      <br />
+      <h2>
+        Schema
+      <br />
 
-<table .table .table-striped .table-condensed .table-bordered>
-  <thead>
-    <tr>
-      <th>Name
-      <th>Example (JSON)
-      <th>Sugar (JSON)
-  <tbody>
-    <tr>
-      <td>Wrap
-      <td><code>"Name":{"w":"String"}
-      <td><code>"Name":"String"
-    <tr>
-      <td>Struct
-      <td><code>"Point":{"m":[{"x":"Int"},{"y":"Int"}]}
-    <tr>
-      <td>Enum
-      <td>
-        <code style="background-color: transparent">
-          "Color": {<br />
-          &nbsp;&nbsp;"e":[<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"Red",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"Green",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;"Blue",<br />
-          &nbsp;&nbsp;&nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
-          &nbsp;&nbsp;]<br />
-          }
-      <td>
-        <code style="background-color: transparent">
-          "Color": [<br />
-          &nbsp;&nbsp;"Red",<br />
-          &nbsp;&nbsp;"Green",<br />
-          &nbsp;&nbsp;"Blue",<br />
-          &nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
-          ]<br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <th>Name
+            <th>Example (JSON)
+            <th>Example with sugar (JSON)
+        <tbody>
+          <tr>
+            <td>Wrap
+            <td><code>"Name":{"w":"String"}
+            <td><code>"Name":"String"
+          <tr>
+            <td>Struct
+            <td><code>"Point":{"m":[{"x":"Int"},{"y":"Int"}]}
+          <tr>
+            <td>Enum
+            <td>
+              <code style="background-color: transparent">
+                "Color": {<br />
+                &nbsp;&nbsp;"e":[<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"Red",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"Green",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"Blue",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
+                &nbsp;&nbsp;]<br />
+                }
+            <td>
+              <code style="background-color: transparent">
+                "Color": [<br />
+                &nbsp;&nbsp;"Red",<br />
+                &nbsp;&nbsp;"Green",<br />
+                &nbsp;&nbsp;"Blue",<br />
+                &nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
+                ]<br />
