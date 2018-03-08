@@ -118,6 +118,9 @@
       <h2>
         Top level
       <br />
+      A quick overview.
+      <br />
+      <br />
 
       <table .table .table-striped .table-condensed .table-bordered>
         <thead>
@@ -162,7 +165,7 @@
       <h2>
         Types
       <br />
-      <b>Fluid</b> supports a handful of built-in <b>primitive</b> and <b>collection</b> types.
+      <b>Fluid</b> supports a handful of builtin <b>primitive</b> and <b>collection</b> types.
       <br />
       <br />
       <table .table .table-striped .table-condensed .table-bordered>
@@ -293,7 +296,9 @@
       <h2>
         Schema
       <br />
-
+      All (non-builtin) <b>types</b> and <b>functions</b> are defined in the <b>schema</b>.
+      <br />
+      <br />
       <table .table .table-striped .table-condensed .table-bordered>
         <thead>
           <tr>
