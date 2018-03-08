@@ -5,695 +5,696 @@
         Language Support Overview
 <br />
 <br />
-<table .table .table-striped .table-bordered style="font-size: 0.6em">
-  <thead>
-    <tr style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-        Types
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        Server
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-      <th scope="col" style="border:none">
-        Client
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none">
-      <th scope="col" style="border:none; background-color: #222; color: #fff">
-        Docs
-    <tr>
-      <th scope="col">
-        Lang
-      <th scope="col">
-        Unit
-      <th scope="col">
-        Bool
-      <th scope="col">
-        Int
-      <th scope="col">
-        Float
-      <th scope="col">
-        Char
-      <th scope="col">
-        String
-      <th scope="col">
-        Option
-      <th scope="col">
-        Either
-      <th scope="col">
-        List
-      <th scope="col">
-        Wrap
-      <th scope="col">
-        Struct
-      <th scope="col">
-        Enum
-      <th scope="col">
-        JSON
-      <th scope="col">
-        Gen
-      <th scope="col">
-        Lib
-      <th scope="col">
-        HTTP
-      <th scope="col">
-        WS
-      <th scope="col">
-        Gen
-      <th scope="col">
-        Lib
-      <th scope="col">
-        HTTP
-      <th scope="col">
-        WS
-      <th scope="col">
-        Gen
-  <tbody>
-    <tr>
-      <td>Clojure
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-    <tr>
-      <td>C++
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">void</a></code>/<code><a href="http://en.cppreference.com/w/cpp/types/nullptr_t">nullptr_t</a></code>
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">bool
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">int32_t
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">double
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/types">char
-      <td><code><a href="http://en.cppreference.com/w/cpp/string/basic_string">string
-      <td><code><a href="http://en.cppreference.com/w/cpp/utility/optional">optional
-      <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
-      <td><code><a href="http://en.cppreference.com/w/cpp/container/vector">vector
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/namespace">using
-      <td><code><a href="http://en.cppreference.com/w/cpp/language/class">struct
-      <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
-      <td>?
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/29">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/49">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/69">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/90">NYI
-      <td>?
-    <tr>
-      <td>
-        Crystal
-      <td><code><a href="https://github.com/crystal-lang/crystal/pull/2701">Void
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Bool.html">Bool
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Int32.html">Int32
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Float64.html">Float64
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Char.html">Char
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/String.html">String
-      <td><code>a&nbsp;|&nbsp;<a href="https://crystal-lang.org/api/0.24.1/Nil.html">Nil</a></code>
-      <td><code>a&nbsp;|&nbsp;b</code>
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Array.html">Array
-      <td>has-a
-      <td><code><a href="https://crystal-lang.org/api/0.24.1/Struct.html">struct</a></code>
-      <td><a href="https://crystal-lang.org/docs/syntax_and_semantics/union_types.html">Union type
-      <td><a href="https://crystal-lang.org/api/0.24.1/JSON.html">JSON
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/30">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/50">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/70">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/91">NYI
-      <td>?
-    <tr>
-      <td>C&#35;
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void">void</a></code>/?
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool">bool
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int">int
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double">double
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/char">char
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string"> string
-      <td><code><a href="https://github.com/nlkl/Optional">Optional
-      <td><code><a href="https://github.com/mikhailshilkov/mikhailio-samples/blob/master/Either%7BTL%2CTR%7D.cs">Either
-      <td><code><a href="https://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx">ArraryList
-      <td>has-a
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs">struct
-      <td>?
-      <td><a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data">Serializer
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/31">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/51">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/71">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/92">NYI
-      <td>?
-    <tr>
-      <td>D
-      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">void</a></code>/?
-      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">bool
-      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">int
-      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">double
-      <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">char
-      <td><code><a href="https://dlang.org/spec/arrays.html#strings">String
-      <td><code><a href="https://dlang.org/phobos/std_typecons.html#Nullable">Nullable!
-      <td><code><a href="https://dlang.org/phobos/std_variant.html#.Algebraic">Algebraic!
-      <td><code><a href="https://dlang.org/phobos/std_container_slist.html">SList!
-      <td>has-a
-      <td><code><a href="https://dlang.org/spec/struct.html">struct
-      <td><a href="https://dlang.org/spec/struct.html#opaque_struct_unions">Tagged unions
-      <td><a href="https://dlang.org/phobos/std_json.html">json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/33">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/52">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/72">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/93">NYI
-      <td>?
-    <tr>
-      <td>Elm
-      <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/07-unit-type.html">()
-      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Bool
-      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Int
-      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Double
-      <td><code><a href="http://elm-lang.org/docs/syntax#literals">Char
-      <td><code><a href="http://elm-lang.org/docs/syntax#literals">String
-      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Maybe">Maybe
-      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Result">Result
-      <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List">List
-      <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">type&nbsp;alias
-      <td><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">Record
-      <td><a href="https://www.elm-tutorial.org/en/01-foundations/05-union-types.html">Union types
-      <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Encode">Encode</a>/<a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode">Decode</a>
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/32">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/53">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/73">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/94">NYI
-      <td>?
-    <tr>
-      <td>F&#35;
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/unit-type">unit
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">bool
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">int
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">float
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">char
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">string
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/options">Option
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/results">Result
-      <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists">List
-      <td>has-a
-      <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records">Record
-      <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/enumerations">Enumeration
-      <td><a href="http://fsharp.github.io/FSharp.Data/library/JsonProvider.html">JSON
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/34">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/54">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/74">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/95">NYI
-      <td>?
-    <tr>
-      <td>Go
-      <td><code>void</code>/?
-      <td><code><a href="https://golang.org/pkg/builtin/#bool">bool
-      <td><code><a href="https://golang.org/pkg/builtin/#int32">int32
-      <td><code><a href="https://golang.org/pkg/builtin/#float64">float64
-      <td><code><a href="https://golang.org/pkg/builtin/#char">char
-      <td><code><a href="https://golang.org/pkg/builtin/#string">string
-      <td><code>*</code>/?
-      <td><code>Either</code>/?
-      <td><a href="https://golang.org/pkg/container/list/">List
-      <td>has-a
-      <td><a href="https://www.golang-book.com/books/intro/9#section1">Structs
-      <td><a href="https://github.com/golang/go/issues/19412">?
-      <td><a href="https://golang.org/pkg/encoding/json/">json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/35">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/55">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/75">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/96">NYI
-      <td>?
-    <tr>
-      <td><a href="https://github.com/jxv/fluid-haskell">Haskell
-      <td><code>()
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Double">Double
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Char">Char
-      <td><code><a href="https://hackage.haskell.org/package/text-1.2.3.0/docs/Data-Text.html#t:Text">Text
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Maybe">Maybe
-      <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Either">Either
-      <td><code>[]
-      <td><code><a href="https://wiki.haskell.org/Newtype">newtype
-      <td><a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Record
-      <td><a href="https://wiki.haskell.org/Algebraic_data_type">ADT
-      <td><a href="https://hackage.haskell.org/package/aeson">Aeson
-      <td>Yes
-      <td>Yes
-      <td><a href="https://github.com/jxv/fluid/issues/23">Yes
-      <td><a href="https://github.com/jxv/fluid/issues/24">NYI
-      <td>Yes
-      <td>Yes
-      <td><a href="https://github.com/jxv/fluid/issues/25">Yes
-      <td><a href="https://github.com/jxv/fluid/issues/26">NYI
-      <td>?
-    <tr>
-      <td>Haxe
-      <td><code><a href="https://haxe.org/manual/types-void.html">Void
-      <td><code><a href="https://haxe.org/manual/types-bool.html">Bool
-      <td><code><a href="https://api.haxe.org/Int.html">Int
-      <td><code><a href="https://api.haxe.org/Float.html">Float
-      <td><code><a href="https://api.haxe.org/String.html">String
-      <td><code><a href="https://api.haxe.org/String.html">String
-      <td><code><a href="https://api.haxe.org/Null.html">Null
-      <td><code><a href="https://api.haxe.org/haxe/ds/Either.html">Either
-      <td><code><a href="https://api.haxe.org/Array.html">Array
-      <td>has-a
-      <td><code><a href="https://haxe.org/manual/types-class-instance.html">class
-      <td>?
-      <td><a href="https://api.haxe.org/haxe/Json.html">Json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/36">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/56">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/76">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/97">NYI
-      <td>?
-    <tr>
-      <td>Idris
-      <td><code><a href="http://docs.idris-lang.org/en/latest/reference/language-features.html">()
-      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Bool.html#Prelude.Bool.Bool">Bool
-      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Int
-      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Double
-      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Char
-      <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">String
-      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Maybe.html">Maybe
-      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Either.html">Either
-      <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.List.html">List
-      <td>has-a
-      <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#records">Record
-      <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#data-types">ADT
-      <td><a href="https://github.com/ziman/lightyear">lightyear
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/37">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/57">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/77">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/98">NYI
-      <td>?
-    <tr>
-      <td>Java
-      <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">void</a></code>/<code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Void.html">Void</a></code>
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Boolean.html">Boolean
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Integer.html">Integer
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Double.html">Double
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Char.html">Char
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">String
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html">Optional
-      <td><code><a href="https://github.com/spencerwi/Either.java">Either
-      <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html">ArrayList
-      <td>has-a
-      <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">class
-      <td>?
-      <td>?
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/38">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/58">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/78">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/99">NYI
-      <td>?
-    <tr>
-      <td>
-        JavaScript
-      <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null
-      <td>boolean
-      <td>number
-      <td>number
-      <td>string
-      <td>string
-      <td>null
-      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
-      <td><a href="https://www.javascript.com/learn/javascript/arrays">Array
-      <td>N/A
-      <td><code>{}
-      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
-      <td>Native
-      <td>-
-      <td>-
-      <td>-
-      <td>-
-      <td>WIP
-      <td>WIP
-      <td><a href="https://github.com/jxv/fluid/issues/79">WIP
-      <td><a href="https://github.com/jxv/fluid/issues/100">NYI
-      <td>?
-    <tr>
-      <td>
-        Kotlin
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char
-      <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String
-      <td><code>?
-      <td><code><a href="https://github.com/adelnizamutdinov/kotlin-either">Either
-      <td><code><a href="https://kotlinlang.org/docs/reference/collections.html">List
-      <td>has-a
-      <td><code><a href="https://kotlinlang.org/docs/reference/data-classes.html">data&nbsp;class
-      <td>?
-      <td><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-j-s-o-n/index.html">JSON
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/39">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/59">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/80">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/101">NYI
-      <td>?
-    <tr>
-      <td>
-        Nim
-      <td><code><a href="https://nim-lang.org/docs/manual.html#types-void-type">void
-      <td><code><a href="https://nim-lang.org/docs/manual.html#types-boolean-type">bool
-      <td><code><a href="https://nim-lang.org/docs/system.html#int32">int32
-      <td><code><a href="https://nim-lang.org/docs/system.html#float64">float64
-      <td><code><a href="https://nim-lang.org/docs/system.html#char">char
-      <td><code><a href="https://nim-lang.org/docs/system.html#string">string
-      <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/option.nim">Option*
-      <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/either.nim">Either*
-      <td><code><a href="https://nim-by-example.github.io/seqs/">seq
-      <td><a href="https://nim-by-example.github.io/types/distinct/">distinct
-      <td><a href="https://nim-by-example.github.io/types/objects/">object
-      <td>?
-      <td><a href="https://nim-lang.org/docs/json.html">json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/40">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/60">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/81">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/102">NYI
-      <td>?
-    <tr>
-      <td>
-        Node
-      <td>null
-      <td>boolean
-      <td>boolean
-      <td>number
-      <td>number
-      <td>string
-      <td>string
-      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
-      <td>Array
-      <td>N/A
-      <td><code>{}
-      <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
-      <td>Native
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/41">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/68">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/82">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/103">NYI
-      <td>?
-    <tr>
-      <td>
-        OCaml
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">unit
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">bool
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">int
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">double
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">char
-      <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">string
-      <td><code><a href="https://ocaml.org/learn/tutorials/null_pointers_asserts_and_warnings.html">option
-      <td><code><a href="https://ocaml.org/learn/tutorials/error_handling.html#Result-type">result
-      <td><code><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#The-type-of-a-linked-list">list
-      <td>?
-      <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Structures">Structs
-      <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Variants-qualified-unions-and-enums">Variants
-      <td><a href="https://github.com/mjambon/yojson">yojson
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/42">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/61">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/83">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/104">NYI
-      <td>?
-    <tr>
-      <td>
-        PureScript
-      <td><code><a href="https://pursuit.purescript.org/packages/purescript-prelude/3.1.0/docs/Data.Unit">Unit
-      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Boolean">Boolean
-      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Int">Int
-      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Number">Number
-      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Char">Char
-      <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:String">String
-      <td><code><a href="https://pursuit.purescript.org/packages/purescript-maybe/3.0.0/docs/Data.Maybe#t:Maybe">Maybe
-      <td><code><a href="https://pursuit.purescript.org/packages/purescript-either/3.1.0/docs/Data.Either#t:Either">Either
-      <td><code><a href="https://pursuit.purescript.org/packages/purescript-lists/4.8.0/docs/Data.List.Types#t:List">List
-      <td><code><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#newtypes">newtype
-      <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#records">Record
-      <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#tagged-unions">ADT
-      <td><a href="https://github.com/purescript-contrib/purescript-argonaut">argonaut
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/43">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/62">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/84">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/105">NYI
-      <td>?
-    <tr>
-      <td>
-        Python
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-    <tr>
-      <td>
-        Reason
-      <td><code>void
-      <td><code><a href="https://reasonml.github.io/docs/en/boolean.html">bool
-      <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">int
-      <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">float
-      <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">char
-      <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">string
-      <td><code><a href="https://reasonml.github.io/docs/en/variant.html#option">option
-      <td><code><a href="https://reasonml.github.io/docs/en/more-on-type.html#type-argument">result
-      <td><code><a href="https://reasonml.github.io/docs/en/variant.html#list">list
-      <td>?
-      <td><a href="https://reasonml.github.io/docs/en/record.html">Record
-      <td><a href="https://reasonml.github.io/docs/en/variant.html">Variant
-      <td><a href="https://github.com/glennsl/bs-json">bs-json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/44">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/63">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/85">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/106">NYI
-      <td>?
-    <tr>
-      <td>
-        Ruby
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-      <td>
-    <tr>
-      <td>
-        Rust
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.unit.html">()
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.bool.html">bool
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.i32.html">i32
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.f64.html">f64
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.char.html">char
-      <td><code><a href="https://doc.rust-lang.org/std/primitive.str.html">str
-      <td><code><a href="https://doc.rust-lang.org/std/option/enum.Option.html">Option
-      <td><code><a href="https://doc.rust-lang.org/std/result/enum.Result.html">Result
-      <td><code><a href="https://doc.rust-lang.org/std/collections/struct.LinkedList.html">LinkedList
-      <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#tuple-structs">Tuple&nbsp;struct
-      <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#structs">Struct
-      <td><a href="https://doc.rust-lang.org/book/first-edition/enums.html">Enum
-      <td><a href="https://github.com/serde-rs/json">serde_json
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/45">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/64">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/86">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/107">NYI
-      <td>?
-    <tr>
-      <td>
-        Scala
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Unit.html">Unit
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Boolean.html">Boolean
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Int.html">Int
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Double.html">Double
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Char.html">Char
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/String.html">String
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Option.html">Option
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/util/Either.html">Either
-      <td><code><a href="http://www.scala-lang.org/api/current/scala/Array.html">Array
-      <td><a href="https://docs.scala-lang.org/overviews/core/value-classes.html">value&nbsp;classes
-      <td><a href="https://docs.scala-lang.org/tour/case-classes.html">case&nbsp;class
-      <td><a href="https://docs.scala-lang.org/tour/traits.html">sealed&nbsp;traits
-      <td><a href="https://json4s.org">json4s
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/46">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/65">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/87">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/108">NYI
-      <td>?
-    <tr>
-      <td>
-        Swift
-      <td><code><a href="https://developer.apple.com/documentation/swift/void">Void
-      <td><code><a href="https://developer.apple.com/documentation/swift/bool">Bool
-      <td><code><a href="https://developer.apple.com/documentation/swift/int">Int
-      <td><code><a href="https://developer.apple.com/documentation/swift/double">Double
-      <td><code><a href="https://developer.apple.com/documentation/swift/character">Character
-      <td><code><a href="https://developer.apple.com/documentation/swift/string">String
-      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID452">Optional
-      <td><code><a href="https://github.com/robrix/Either">Either
-      <td><code><a href="https://developer.apple.com/documentation/swift/array">Array
-      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID361">typealias
-      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html">struct
-      <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html">enum
-      <td><a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/47">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/66">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/88">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/109">NYI
-      <td>?
-    <tr>
-      <td>
-        TypeScript
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">void
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">boolean
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;null)
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;b)
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">Array
-      <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Type alias
-      <td><code><a href="https://www.typescriptlang.org/docs/handbook/interfaces.html">interface
-      <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Unions
-      <td><a href="http://choly.ca/post/typescript-json/">Built-in
-      <td>WIP
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/48">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/67">NYI
-      <td>NYI
-      <td>NYI
-      <td><a href="https://github.com/jxv/fluid/issues/89">NYI
-      <td><a href="https://github.com/jxv/fluid/issues/110">NYI
-      <td>?
+<div style="overflow:auto; border-color: #333; border-width: 2px; border-style: solid; box-shadow: inset 0 0 10px rgba(0,0,0,0.3)">
+  <table .table .table-striped .table-bordered style="font-size: 0.6em">
+    <thead>
+      <tr style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+          Types
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none; background-color: #222; color: #fff">
+          Server
+        <th scope="col" style="border:none; background-color: #222; color: #fff">
+        <th scope="col" style="border:none; background-color: #222; color: #fff">
+        <th scope="col" style="border:none; background-color: #222; color: #fff">
+        <th scope="col" style="border:none">
+          Client
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none">
+        <th scope="col" style="border:none; background-color: #222; color: #fff">
+          Docs
+      <tr>
+        <th scope="col">
+          Lang
+        <th scope="col">
+          Unit
+        <th scope="col">
+          Bool
+        <th scope="col">
+          Int
+        <th scope="col">
+          Float
+        <th scope="col">
+          Char
+        <th scope="col">
+          String
+        <th scope="col">
+          Option
+        <th scope="col">
+          Either
+        <th scope="col">
+          List
+        <th scope="col">
+          Wrap
+        <th scope="col">
+          Struct
+        <th scope="col">
+          Enum
+        <th scope="col">
+          JSON
+        <th scope="col">
+          Gen
+        <th scope="col">
+          Lib
+        <th scope="col">
+          HTTP
+        <th scope="col">
+          WS
+        <th scope="col">
+          Gen
+        <th scope="col">
+          Lib
+        <th scope="col">
+          HTTP
+        <th scope="col">
+          WS
+        <th scope="col">
+          Gen
+    <tbody>
+      <tr>
+        <td>Clojure
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+      <tr>
+        <td>C++
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/types">void</a></code>/<code><a href="http://en.cppreference.com/w/cpp/types/nullptr_t">nullptr_t</a></code>
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/types">bool
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/types">int32_t
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/types">double
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/types">char
+        <td><code><a href="http://en.cppreference.com/w/cpp/string/basic_string">string
+        <td><code><a href="http://en.cppreference.com/w/cpp/utility/optional">optional
+        <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
+        <td><code><a href="http://en.cppreference.com/w/cpp/container/vector">vector
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/namespace">using
+        <td><code><a href="http://en.cppreference.com/w/cpp/language/class">struct
+        <td><code><a href="http://en.cppreference.com/w/cpp/utility/variant">variant
+        <td>?
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/29">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/49">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/69">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/90">NYI
+        <td>?
+      <tr>
+        <td>
+          Crystal
+        <td><code><a href="https://github.com/crystal-lang/crystal/pull/2701">Void
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Bool.html">Bool
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Int32.html">Int32
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Float64.html">Float64
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Char.html">Char
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/String.html">String
+        <td><code>a&nbsp;|&nbsp;<a href="https://crystal-lang.org/api/0.24.1/Nil.html">Nil</a></code>
+        <td><code>a&nbsp;|&nbsp;b</code>
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Array.html">Array
+        <td>has-a
+        <td><code><a href="https://crystal-lang.org/api/0.24.1/Struct.html">struct</a></code>
+        <td><a href="https://crystal-lang.org/docs/syntax_and_semantics/union_types.html">Union type
+        <td><a href="https://crystal-lang.org/api/0.24.1/JSON.html">JSON
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/30">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/50">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/70">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/91">NYI
+        <td>?
+      <tr>
+        <td>C&#35;
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/void">void</a></code>/?
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/bool">bool
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/int">int
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double">double
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/char">char
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/string"> string
+        <td><code><a href="https://github.com/nlkl/Optional">Optional
+        <td><code><a href="https://github.com/mikhailshilkov/mikhailio-samples/blob/master/Either%7BTL%2CTR%7D.cs">Either
+        <td><code><a href="https://msdn.microsoft.com/en-us/library/system.collections.arraylist.aspx">ArraryList
+        <td>has-a
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-structs">struct
+        <td>?
+        <td><a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data">Serializer
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/31">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/51">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/71">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/92">NYI
+        <td>?
+      <tr>
+        <td>D
+        <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">void</a></code>/?
+        <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">bool
+        <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">int
+        <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">double
+        <td><code><a href="https://dlang.org/spec/type.html#basic-data-types">char
+        <td><code><a href="https://dlang.org/spec/arrays.html#strings">String
+        <td><code><a href="https://dlang.org/phobos/std_typecons.html#Nullable">Nullable!
+        <td><code><a href="https://dlang.org/phobos/std_variant.html#.Algebraic">Algebraic!
+        <td><code><a href="https://dlang.org/phobos/std_container_slist.html">SList!
+        <td>has-a
+        <td><code><a href="https://dlang.org/spec/struct.html">struct
+        <td><a href="https://dlang.org/spec/struct.html#opaque_struct_unions">Tagged unions
+        <td><a href="https://dlang.org/phobos/std_json.html">json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/33">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/52">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/72">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/93">NYI
+        <td>?
+      <tr>
+        <td>Elm
+        <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/07-unit-type.html">()
+        <td><code><a href="http://elm-lang.org/docs/syntax#literals">Bool
+        <td><code><a href="http://elm-lang.org/docs/syntax#literals">Int
+        <td><code><a href="http://elm-lang.org/docs/syntax#literals">Double
+        <td><code><a href="http://elm-lang.org/docs/syntax#literals">Char
+        <td><code><a href="http://elm-lang.org/docs/syntax#literals">String
+        <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Maybe">Maybe
+        <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Result">Result
+        <td><code><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/List">List
+        <td><code><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">type&nbsp;alias
+        <td><a href="https://www.elm-tutorial.org/en/01-foundations/06-type-aliases.html">Record
+        <td><a href="https://www.elm-tutorial.org/en/01-foundations/05-union-types.html">Union types
+        <td><a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Encode">Encode</a>/<a href="http://package.elm-lang.org/packages/elm-lang/core/latest/Json-Decode">Decode</a>
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/32">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/53">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/73">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/94">NYI
+        <td>?
+      <tr>
+        <td>F&#35;
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/unit-type">unit
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">bool
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">int
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">float
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">char
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/primitive-types">string
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/options">Option
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/results">Result
+        <td><code><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/lists">List
+        <td>has-a
+        <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/records">Record
+        <td><a href="https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/enumerations">Enumeration
+        <td><a href="http://fsharp.github.io/FSharp.Data/library/JsonProvider.html">JSON
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/34">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/54">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/74">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/95">NYI
+        <td>?
+      <tr>
+        <td>Go
+        <td><code>void</code>/?
+        <td><code><a href="https://golang.org/pkg/builtin/#bool">bool
+        <td><code><a href="https://golang.org/pkg/builtin/#int32">int32
+        <td><code><a href="https://golang.org/pkg/builtin/#float64">float64
+        <td><code><a href="https://golang.org/pkg/builtin/#char">char
+        <td><code><a href="https://golang.org/pkg/builtin/#string">string
+        <td><code>*</code>/?
+        <td><code>Either</code>/?
+        <td><a href="https://golang.org/pkg/container/list/">List
+        <td>has-a
+        <td><a href="https://www.golang-book.com/books/intro/9#section1">Structs
+        <td><a href="https://github.com/golang/go/issues/19412">?
+        <td><a href="https://golang.org/pkg/encoding/json/">json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/35">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/55">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/75">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/96">NYI
+        <td>?
+      <tr>
+        <td><a href="https://github.com/jxv/fluid-haskell">Haskell
+        <td><code>()
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Bool">Bool
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Int">Int
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Double">Double
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Char">Char
+        <td><code><a href="https://hackage.haskell.org/package/text-1.2.3.0/docs/Data-Text.html#t:Text">Text
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Maybe">Maybe
+        <td><code><a href="https://hackage.haskell.org/package/base-4.10.1.0/docs/Prelude.html#t:Either">Either
+        <td><code>[]
+        <td><code><a href="https://wiki.haskell.org/Newtype">newtype
+        <td><a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#record-syntax">Record
+        <td><a href="https://wiki.haskell.org/Algebraic_data_type">ADT
+        <td><a href="https://hackage.haskell.org/package/aeson">Aeson
+        <td>Yes
+        <td>Yes
+        <td><a href="https://github.com/jxv/fluid/issues/23">Yes
+        <td><a href="https://github.com/jxv/fluid/issues/24">NYI
+        <td>Yes
+        <td>Yes
+        <td><a href="https://github.com/jxv/fluid/issues/25">Yes
+        <td><a href="https://github.com/jxv/fluid/issues/26">NYI
+        <td>?
+      <tr>
+        <td>Haxe
+        <td><code><a href="https://haxe.org/manual/types-void.html">Void
+        <td><code><a href="https://haxe.org/manual/types-bool.html">Bool
+        <td><code><a href="https://api.haxe.org/Int.html">Int
+        <td><code><a href="https://api.haxe.org/Float.html">Float
+        <td><code><a href="https://api.haxe.org/String.html">String
+        <td><code><a href="https://api.haxe.org/String.html">String
+        <td><code><a href="https://api.haxe.org/Null.html">Null
+        <td><code><a href="https://api.haxe.org/haxe/ds/Either.html">Either
+        <td><code><a href="https://api.haxe.org/Array.html">Array
+        <td>has-a
+        <td><code><a href="https://haxe.org/manual/types-class-instance.html">class
+        <td>?
+        <td><a href="https://api.haxe.org/haxe/Json.html">Json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/36">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/56">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/76">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/97">NYI
+        <td>?
+      <tr>
+        <td>Idris
+        <td><code><a href="http://docs.idris-lang.org/en/latest/reference/language-features.html">()
+        <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Bool.html#Prelude.Bool.Bool">Bool
+        <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Int
+        <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Double
+        <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">Char
+        <td><code><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#primitive-types">String
+        <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Maybe.html">Maybe
+        <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.Either.html">Either
+        <td><code><a href="https://www.idris-lang.org/docs/current/prelude_doc/docs/Prelude.List.html">List
+        <td>has-a
+        <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#records">Record
+        <td><a href="http://docs.idris-lang.org/en/latest/tutorial/typesfuns.html#data-types">ADT
+        <td><a href="https://github.com/ziman/lightyear">lightyear
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/37">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/57">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/77">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/98">NYI
+        <td>?
+      <tr>
+        <td>Java
+        <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">void</a></code>/<code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Void.html">Void</a></code>
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Boolean.html">Boolean
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Integer.html">Integer
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Double.html">Double
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Char.html">Char
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/lang/String.html">String
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html">Optional
+        <td><code><a href="https://github.com/spencerwi/Either.java">Either
+        <td><code><a href="https://docs.oracle.com/javase/9/docs/api/java/util/ArrayList.html">ArrayList
+        <td>has-a
+        <td><code><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html">class
+        <td>?
+        <td>?
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/38">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/58">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/78">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/99">NYI
+        <td>?
+      <tr>
+        <td>
+          JavaScript
+        <td><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null
+        <td>boolean
+        <td>number
+        <td>number
+        <td>string
+        <td>string
+        <td>null
+        <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
+        <td><a href="https://www.javascript.com/learn/javascript/arrays">Array
+        <td>N/A
+        <td><code>{}
+        <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
+        <td>Native
+        <td>-
+        <td>-
+        <td>-
+        <td>-
+        <td>WIP
+        <td>WIP
+        <td><a href="https://github.com/jxv/fluid/issues/79">WIP
+        <td><a href="https://github.com/jxv/fluid/issues/100">NYI
+        <td>?
+      <tr>
+        <td>
+          Kotlin
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char
+        <td><code><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String
+        <td><code>?
+        <td><code><a href="https://github.com/adelnizamutdinov/kotlin-either">Either
+        <td><code><a href="https://kotlinlang.org/docs/reference/collections.html">List
+        <td>has-a
+        <td><code><a href="https://kotlinlang.org/docs/reference/data-classes.html">data&nbsp;class
+        <td>?
+        <td><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.js/-j-s-o-n/index.html">JSON
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/39">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/59">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/80">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/101">NYI
+        <td>?
+      <tr>
+        <td>
+          Nim
+        <td><code><a href="https://nim-lang.org/docs/manual.html#types-void-type">void
+        <td><code><a href="https://nim-lang.org/docs/manual.html#types-boolean-type">bool
+        <td><code><a href="https://nim-lang.org/docs/system.html#int32">int32
+        <td><code><a href="https://nim-lang.org/docs/system.html#float64">float64
+        <td><code><a href="https://nim-lang.org/docs/system.html#char">char
+        <td><code><a href="https://nim-lang.org/docs/system.html#string">string
+        <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/option.nim">Option*
+        <td><code><a href="https://github.com/vegansk/nimfp/blob/master/src/fp/either.nim">Either*
+        <td><code><a href="https://nim-by-example.github.io/seqs/">seq
+        <td><a href="https://nim-by-example.github.io/types/distinct/">distinct
+        <td><a href="https://nim-by-example.github.io/types/objects/">object
+        <td>?
+        <td><a href="https://nim-lang.org/docs/json.html">json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/40">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/60">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/81">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/102">NYI
+        <td>?
+      <tr>
+        <td>
+          Node
+        <td>null
+        <td>boolean
+        <td>boolean
+        <td>number
+        <td>number
+        <td>string
+        <td>string
+        <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
+        <td>Array
+        <td>N/A
+        <td><code>{}
+        <td><a href="https://github.com/jxv/fluid/issues/27">Tagged&nbsp;unions
+        <td>Native
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/41">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/68">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/82">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/103">NYI
+        <td>?
+      <tr>
+        <td>
+          OCaml
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">unit
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">bool
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">int
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">double
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">char
+        <td><code><a href="https://ocaml.org/learn/tutorials/basics.html#Basic-types">string
+        <td><code><a href="https://ocaml.org/learn/tutorials/null_pointers_asserts_and_warnings.html">option
+        <td><code><a href="https://ocaml.org/learn/tutorials/error_handling.html#Result-type">result
+        <td><code><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#The-type-of-a-linked-list">list
+        <td>?
+        <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Structures">Structs
+        <td><a href="https://ocaml.org/learn/tutorials/data_types_and_matching.html#Variants-qualified-unions-and-enums">Variants
+        <td><a href="https://github.com/mjambon/yojson">yojson
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/42">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/61">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/83">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/104">NYI
+        <td>?
+      <tr>
+        <td>
+          PureScript
+        <td><code><a href="https://pursuit.purescript.org/packages/purescript-prelude/3.1.0/docs/Data.Unit">Unit
+        <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Boolean">Boolean
+        <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Int">Int
+        <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Number">Number
+        <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:Char">Char
+        <td><code><a href="https://pursuit.purescript.org/builtins/docs/Prim#t:String">String
+        <td><code><a href="https://pursuit.purescript.org/packages/purescript-maybe/3.0.0/docs/Data.Maybe#t:Maybe">Maybe
+        <td><code><a href="https://pursuit.purescript.org/packages/purescript-either/3.1.0/docs/Data.Either#t:Either">Either
+        <td><code><a href="https://pursuit.purescript.org/packages/purescript-lists/4.8.0/docs/Data.List.Types#t:List">List
+        <td><code><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#newtypes">newtype
+        <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#records">Record
+        <td><a href="https://github.com/purescript/documentation/blob/master/language/Types.md#tagged-unions">ADT
+        <td><a href="https://github.com/purescript-contrib/purescript-argonaut">argonaut
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/43">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/62">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/84">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/105">NYI
+        <td>?
+      <tr>
+        <td>
+          Python
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+      <tr>
+        <td>
+          Reason
+        <td><code>void
+        <td><code><a href="https://reasonml.github.io/docs/en/boolean.html">bool
+        <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">int
+        <td><code><a href="https://reasonml.github.io/docs/en/integer-and-float.html">float
+        <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">char
+        <td><code><a href="https://reasonml.github.io/docs/en/string-and-char.html">string
+        <td><code><a href="https://reasonml.github.io/docs/en/variant.html#option">option
+        <td><code><a href="https://reasonml.github.io/docs/en/more-on-type.html#type-argument">result
+        <td><code><a href="https://reasonml.github.io/docs/en/variant.html#list">list
+        <td>?
+        <td><a href="https://reasonml.github.io/docs/en/record.html">Record
+        <td><a href="https://reasonml.github.io/docs/en/variant.html">Variant
+        <td><a href="https://github.com/glennsl/bs-json">bs-json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/44">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/63">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/85">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/106">NYI
+        <td>?
+      <tr>
+        <td>
+          Ruby
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+        <td>
+      <tr>
+        <td>
+          Rust
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.unit.html">()
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.bool.html">bool
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.i32.html">i32
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.f64.html">f64
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.char.html">char
+        <td><code><a href="https://doc.rust-lang.org/std/primitive.str.html">str
+        <td><code><a href="https://doc.rust-lang.org/std/option/enum.Option.html">Option
+        <td><code><a href="https://doc.rust-lang.org/std/result/enum.Result.html">Result
+        <td><code><a href="https://doc.rust-lang.org/std/collections/struct.LinkedList.html">LinkedList
+        <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#tuple-structs">Tuple&nbsp;struct
+        <td><a href="https://doc.rust-lang.org/1.6.0/book/structs.html#structs">Struct
+        <td><a href="https://doc.rust-lang.org/book/first-edition/enums.html">Enum
+        <td><a href="https://github.com/serde-rs/json">serde_json
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/45">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/64">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/86">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/107">NYI
+        <td>?
+      <tr>
+        <td>
+          Scala
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Unit.html">Unit
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Boolean.html">Boolean
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Int.html">Int
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Double.html">Double
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Char.html">Char
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/String.html">String
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Option.html">Option
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/util/Either.html">Either
+        <td><code><a href="http://www.scala-lang.org/api/current/scala/Array.html">Array
+        <td><a href="https://docs.scala-lang.org/overviews/core/value-classes.html">value&nbsp;classes
+        <td><a href="https://docs.scala-lang.org/tour/case-classes.html">case&nbsp;class
+        <td><a href="https://docs.scala-lang.org/tour/traits.html">sealed&nbsp;traits
+        <td><a href="https://json4s.org">json4s
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/46">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/65">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/87">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/108">NYI
+        <td>?
+      <tr>
+        <td>
+          Swift
+        <td><code><a href="https://developer.apple.com/documentation/swift/void">Void
+        <td><code><a href="https://developer.apple.com/documentation/swift/bool">Bool
+        <td><code><a href="https://developer.apple.com/documentation/swift/int">Int
+        <td><code><a href="https://developer.apple.com/documentation/swift/double">Double
+        <td><code><a href="https://developer.apple.com/documentation/swift/character">Character
+        <td><code><a href="https://developer.apple.com/documentation/swift/string">String
+        <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID452">Optional
+        <td><code><a href="https://github.com/robrix/Either">Either
+        <td><code><a href="https://developer.apple.com/documentation/swift/array">Array
+        <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID361">typealias
+        <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html">struct
+        <td><code><a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html">enum
+        <td><a href="https://github.com/SwiftyJSON/SwiftyJSON">SwiftyJSON
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/47">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/66">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/88">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/109">NYI
+        <td>?
+      <tr>
+        <td>
+          TypeScript
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">void
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">boolean
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">number
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">string
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;null)
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">(a&nbsp;|&nbsp;b)
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">Array
+        <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Type alias
+        <td><code><a href="https://www.typescriptlang.org/docs/handbook/interfaces.html">interface
+        <td><a href="https://www.typescriptlang.org/docs/handbook/advanced-types.html">Unions
+        <td><a href="http://choly.ca/post/typescript-json/">Built-in
+        <td>WIP
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/48">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/67">NYI
+        <td>NYI
+        <td>NYI
+        <td><a href="https://github.com/jxv/fluid/issues/89">NYI
+        <td><a href="https://github.com/jxv/fluid/issues/110">NYI
+        <td>?

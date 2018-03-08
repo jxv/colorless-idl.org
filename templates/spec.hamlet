@@ -253,7 +253,11 @@
       <h2>
         Pull (RPC) Configuration
       <br />
-
+      This describes the high-level configuration from <b>client request</b> to <b>server response</b>.
+      Address related data is mainly for the clients as they need to know what to target.
+      The server can make adjustments behind the scenes.
+      <br />
+      <br />
       <table .table .table-striped .table-condensed .table-bordered>
         <thead>
           <tr>
@@ -333,3 +337,20 @@
                 &nbsp;&nbsp;"Blue",<br />
                 &nbsp;&nbsp;{"tag":"Custom","m":[{"r":"Int"}, {"g":"Int"}, {"b":"Int"}]}<br />
                 ]<br />
+
+      <br />
+      <br />
+      <br />
+      <b>Functions</b> are just types with an output, <code>"o"</code>.
+      One exception, the hollow function is not a type because it has no arguments.
+      <br />
+      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <th>Name
+            <th>Example (JSON)
+        <tbody>
+          <tr>
+            <td>Hollow
+            <td><code>"GenerateRandomString":{"o":"String"}
