@@ -34,7 +34,6 @@
                 &nbsp;&nbsp;"query": <span style="background-color: #ff0">&lt;QUERY_HERE&gt;</span><br/>
                 }
       <br />
-      <br />
 
       <h2> JSON
       <br />
@@ -92,20 +91,29 @@
 
       <h2> Types
 
-      As a part of being small, the <b>query language</b> has its own idioms which work along with the nature of <b>JSON</b>.
-
-      <h4> null
+      As a small language, <b>Fluid</b> has its own idioms which work along with the nature of <b>JSON</b>.
+      Any "shortcuts" taken are for readability for non-generating clients.
+      Types are no exception.
 
       <h3> Collections
+      <br />
 
+      Builtin collection types contain other types.
+      For example, a list type is a collection.
+      It holds one or many values which can be mapped or iterated over.
+
+      <br />
       <h4> Option
+      <br />
 
       Because every <b>JSON</b> value has the potential to be <code>null</code>, it's overloaded to represent the <code>None</code> of <code>Option</code> values.
       This follows a common pattern of <b>JSON</b> translations with static languages.
       From It simples the underlying <b>JSON</b> value in a <code>Some</code> just to be itself.
       Nonsensical and a rarity, nested <code>Option</code> types are discouraged.
 
+      <br />
       <h4> Tuple
+      <br />
 
       <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
@@ -114,7 +122,46 @@
               <code style="background-color: transparent">
                 ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
 
+      <br />
       <h4> List
+      <br />
+
+      <br />
+      <h4> Either
+      <br />
+
+      <br />
+      <h3> Primitives
+      <br />
+
+      <br />
+      <h4> Unit
+      <br />
+
+      <code>Unit</code> is a type that means the absence of a meaningful value.
+      The <b>JSON</b> <code>null</code> value overloads the value for this type too.
+      <code>null</code> is the only acceptable value in transport.
+      Most languages will represent this type with its unit, void, or some other null-like type.
+      A junk char type could be used as last resort.
+
+      <br />
+      <br />
+      <h4> Int
+      <br />
+
+      <code>Int</code> is a 32-bit integer.
+      The majority of languages have a 32-bit integer type, so the translation is straight-foward.
+      In transport, it uses the <b>JSON</b> number representation.
+
+      <br />
+      <br />
+      <h4>Float
+      <br />
+
+      <code>Float</code> is a 64-bit floating point.
+      Like <code>Int</code>, the majority of languages have a 64-bit floating point type.
+      In transport, it uses the <b>JSON</b> number representation as well.
+      This is a proper overloaded usage.
 
 
       <h2> Built-in functions
