@@ -146,7 +146,29 @@
 
       <br />
       <br />
-      <h4> Int
+      <h4>Bool
+      <br />
+
+      Bool are represented by <code>true</code> and <code>false</code>.
+
+      <br />
+      <br />
+      <h4>Char
+      <br />
+
+      Like in JavaScript, JSON uses string with a length of one to represent a character.
+      But it is still a string. <code>"abc123"</code>
+
+      <br />
+      <br />
+      <h4>String
+      <br />
+
+      <code>"one. two. three. I'm a string."</code>
+
+      <br />
+      <br />
+      <h4>Int
       <br />
 
       <code>Int</code> is a 32-bit integer.
@@ -164,14 +186,57 @@
       This is a proper overloaded usage.
 
 
+      <br />
+      <br />
       <h2> Built-in functions
+      <br />
 
-      <h4> if
+      <br />
+      <br />
+      <h4>if
+      <br />
 
-      <h4> do
+      <br />
+      <h4>iflet
+      <br />
+      <br />
 
-      <h4> def
+      <br />
+      <h4>def
+      <br />
+      <br />
 
-      <h4> fn
+      <br />
+      <h4>do
+      <br />
+      <br />
 
-      <h4> match
+      <br />
+      <h4>fn
+      <br />
+      <br />
+
+      <br />
+      <h4>match
+      <br />
+      <br />
+
+      <br />
+      <h4>get
+      <br />
+      <br />
+
+      <br />
+      <h4>set
+      <br />
+      <br />
+
+      <br />
+      <h4>list
+      <br />
+      <br />
+
+      <br />
+      <h4>tuple
+      <br />
+      <br />
