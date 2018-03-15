@@ -348,9 +348,18 @@
       <table .table .table-striped .table-condensed .table-bordered>
         <thead>
           <tr>
-            <th>Name
+            <th>Custom Function Type
             <th>Example (JSON)
         <tbody>
           <tr>
             <td>Hollow
-            <td><code>"GenerateRandomString":{"o":"String"}
+            <td><code>"RandomString": {"o":"String"}
+          <tr>
+            <td>Wrap
+            <td><code>"AddOne": {"w":"Int","o":"Int"}
+          <tr>
+            <td>Struct
+            <td><code>"CreateItem": {"m":[{"name":"String"}, {"color":"Color"}],"o":"ItemId"}
+          <tr>
+            <td>Enumeration
+            <td><code>"OrderFood": {"e":["Burger","Fries",{"tag":"Drink","m":[{"flavor":"DrinkFlavor"}]}], "o":"OrderId"}

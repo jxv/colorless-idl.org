@@ -50,4 +50,4 @@ $else
     <div .container>
         <hr />
         <p .text-muted>
-            #{appCopyright $ appSettings master} | <a href="https://github.com/jxv/fluid-site">Website Source</a>
+            #{appCopyright $ appSettings master}

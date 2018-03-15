@@ -3,3 +3,73 @@
     <div .col .col-md .col-md-10 .col-md-offset-1>
       <h1>
         Evolution
+
+      <br />
+      <br />
+
+      When it comes to <b>API</b> integration.
+      <b>Versioning</b> is a hot topic for debate.
+      One thing is for sure, backwards compability is a necessity when the system grows.
+      But how do you do it?
+      They are many approaches including an unfortunate, <i>laissez faire</i> approach with "versionless" <b>APIs</b>,
+      where breaking changes are forbidden.
+      <br />
+      <br />
+      <b>Fluid</b> takes a hard and strict stance in favor of <b>versioning</b>.
+      It imposes a semantic-style <b>versioning</b> approach for <b>evolution</b>.
+      And it does so an interesting way, where breaking changes aren't heart breaking.
+      <br />
+      <br />
+      Because <b>Fluid</b> requires a spec file for the <b>API</b>, the spec must be saved for later consumption and generation.
+      And over time you save many progressing specs with various changes.
+      Each change derives from a new feature or removal of one.
+      While features are the driving force for what's in an <b>APIs</b>, it's not the decider of versions.
+      A version is only to ensure that a consumer can rely on the <b>API</b> over a period of time.
+      The reliance can be further ensured with automation.
+      With a progression of specs at hand, versioning is automated by checking for differences with the previous one.
+      <b>Fluid</b> does this automation.
+      It uses the differences between specs to decide between breaking (<b>major</b>) and non-breaking (<b>minor</b>) changes.
+      <br />
+      <br />
+      <b>
+      <br />
+      <br />
+      <b>Versioning</b> is just another reproducible step.
+      This is absolutely superb.
+      An <b>entire</b> class of problems is instantly avoided.
+      <br />
+      <br />
+      <h3>Supporting different versions on the Server
+      <br />
+      It's fairly straight forward for a client to operate from one version of the spec.
+      The code is generated and sends requests to the server.
+      The server must handle the differences.
+      It does so by internally <b>dispatching</b> functions of the respectively versioned class per <b>API</b>.
+      The dispatcher is also generated, so you don't need to worry about it.
+      <br />
+      <br />
+      <b>
+      <br />
+      <br />
+      <h3>Don't reimplement non-changes
+      <br />
+      First, servers only generate major versions.
+      Non-latest minor versions are assumed to be handled by the latest one.
+      Second, if a <b>type</b> or <b>function</b> doesn't change between major version.
+      The generated defintion of the type won't be duplicated.
+      Instead it will be imported and used with the succeeding versions.
+      This is great because function implementations can also be reused.
+      <br />
+      <b>
+      <br />
+      <br />
+      <h3>Deprecating versions
+      <br />
+      <br />
+      There comes a day in which an <b>API</b> will die.
+      It can't be supported forever, but deprecating should be as easy and introducing it
+      -- at least on an <b>API</b> level.
+      Simply passing the versions <b>supported</b> while generating code will stop generated <b>unsupported</b> versions.
+      Then you can delete the <b>unsupported</b> implementations.
+      <br />
+      <br />
