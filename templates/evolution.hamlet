@@ -31,7 +31,8 @@
       It uses the differences between specs to decide between breaking (<b>major</b>) and non-breaking (<b>minor</b>) changes.
       <br />
       <br />
-      <b>
+      <center>
+        <img alt="Fluid Evolution Overview" src=@{StaticR img_fluid_evolution_overview_png} width="760px" height="380px"/>
       <br />
       <br />
       <b>Versioning</b> is just another reproducible step.
@@ -68,7 +69,7 @@
       <br />
       There comes a day in which an <b>API</b> will die.
       It can't be supported forever, but deprecating should be as easy as introducing it.
-      With <b>Fluid</b>'s CLI, passing the versions <b>supported</b> while generating code will stop generated <b>unsupported</b> versions.
+      With <b>Fluid</b>'s CLI, passing the versions <b>supported</b> while generating code won't generate <b>unsupported</b> versions.
       Then you can delete the <b>unsupported</b> implementations.
       <br />
       <br />
