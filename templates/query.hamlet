@@ -76,6 +76,8 @@
       Each request's query is always sandboxed <b>separately</b>.
       Variables are <b>not</b> carried over into parallel or sequential requests.
 
+      <br />
+      <br />
       <h3> Authentication and Authorization
       <br />
 
@@ -89,7 +91,10 @@
       How that happens should remain a mystery to the sandboxed runtime.
       It's no business of any <b>API</b> code to directly deal with authentication and authorization logic.
 
+      <br />
+      <br />
       <h2> Types
+      <br />
 
       As a small language, <b>Fluid</b> has its own idioms which work along with the nature of <b>JSON</b>.
       Any "shortcuts" taken are for readability for non-generating clients.
@@ -103,6 +108,7 @@
       It holds one or many values which can be mapped or iterated over.
 
       <br />
+      <br />
       <h4> Option
       <br />
 
@@ -111,6 +117,7 @@
       From It simples the underlying <b>JSON</b> value in a <code>Some</code> just to be itself.
       Nonsensical and a rarity, nested <code>Option</code> types are discouraged.
 
+      <br />
       <br />
       <h4> Tuple
       <br />

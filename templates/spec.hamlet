@@ -362,4 +362,12 @@
             <td><code>"CreateItem": {"m":[{"name":"String"}, {"color":"Color"}],"o":"ItemId"}
           <tr>
             <td>Enumeration
-            <td><code>"OrderFood": {"e":["Burger","Fries",{"tag":"Drink","m":[{"flavor":"DrinkFlavor"}]}], "o":"OrderId"}
+            <td><code style="background-color: transparent">
+              "OrderFood": {<br />
+              &nbsp;&nbsp;"e":[<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"Burger",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"Fries",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;{"tag":"Drink", "m":[{"flavor":"DrinkFlavor"}]}<br />
+              &nbsp;&nbsp;],<br />
+              &nbsp;&nbsp;"o":"OrderId"<br />
+              }

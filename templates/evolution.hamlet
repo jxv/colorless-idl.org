@@ -67,9 +67,8 @@
       <br />
       <br />
       There comes a day in which an <b>API</b> will die.
-      It can't be supported forever, but deprecating should be as easy and introducing it
-      -- at least on an <b>API</b> level.
-      Simply passing the versions <b>supported</b> while generating code will stop generated <b>unsupported</b> versions.
+      It can't be supported forever, but deprecating should be as easy as introducing it.
+      With <b>Fluid</b>'s CLI, passing the versions <b>supported</b> while generating code will stop generated <b>unsupported</b> versions.
       Then you can delete the <b>unsupported</b> implementations.
       <br />
       <br />
