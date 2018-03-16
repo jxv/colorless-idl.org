@@ -31,8 +31,10 @@
       It uses the differences between specs to decide between breaking (<b>major</b>) and non-breaking (<b>minor</b>) changes.
       <br />
       <br />
+      <br />
       <center>
         <img alt="Fluid Evolution Overview" src=@{StaticR img_fluid_evolution_overview_png} width="760px" height="380px"/>
+      <br />
       <br />
       <br />
       <b>Versioning</b> is just another reproducible step.
@@ -49,7 +51,10 @@
       The dispatcher is also generated, so you don't need to worry about it.
       <br />
       <br />
-      <b>
+      <br />
+      <center>
+        <img alt="Fluid Evolution Dispatcher" src=@{StaticR img_fluid_evolution_dispatcher_png} width="764px" height="513px"/>
+      <br />
       <br />
       <br />
       <h3>Don't reimplement non-changes
