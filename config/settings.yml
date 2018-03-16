@@ -25,5 +25,5 @@ ip-from-header: "_env:IP_FROM_HEADER:false"
 # mutable-static: false
 # skip-combining: false
 
-copyright: Joe Vargas © 2018
+copyright: © 2018
 #analytics: UA-YOURCODE
