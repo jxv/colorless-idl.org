@@ -348,7 +348,7 @@
       <table .table .table-striped .table-condensed .table-bordered>
         <thead>
           <tr>
-            <th>Custom Function Type
+            <th>Schema Function Type
             <th>Example (JSON)
         <tbody>
           <tr>

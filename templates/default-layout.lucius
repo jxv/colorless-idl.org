@@ -37,6 +37,10 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 .masthead h2 {
     font-size: 1.7em;
     font-weight: normal;

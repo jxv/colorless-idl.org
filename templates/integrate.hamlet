@@ -4,9 +4,44 @@
           <h1>How To
           <br />
           <br />
-          <ol>
-              <li>Create an endpoint
-              <li>Add integration code
-              <li>Inject headers into meta middleware
-              <li>Fill spec with schema
-              <li>Generate and implement
+          <h2>Client
+          <br />
+
+          <br />
+          <br />
+          <br />
+          <h2>Server
+          <br />
+
+          <br />
+          <br />
+          <h3>Create an endpoint
+          <br />
+
+          <br />
+          <br />
+          <h3>Write schema in spec
+          <br />
+
+          <br />
+          <br />
+          <h3>Generate from spec(s)
+          <br />
+
+          <br />
+          <br />
+          <h3>Integrate Fluid server library
+          <br />
+
+          <br />
+          <br />
+          <h3>Inject headers into meta middleware
+          <br />
+
+          <br />
+          <br />
+          <h3>Implement API functions
+          <br />
+
+          <br />
+          <br />

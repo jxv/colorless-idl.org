@@ -93,7 +93,7 @@
 
       <br />
       <br />
-      <h2> Types
+      <h2>Built-in Types
       <br />
 
       As a small language, <b>Fluid</b> has its own idioms which work along with the nature of <b>JSON</b>.
@@ -245,5 +245,33 @@
 
       <br />
       <h4>tuple
+      <br />
+      <br />
+
+      <br />
+      <br />
+      <h2> Schema Defined Functions
+      <br />
+
+      <br />
+      <h4>Hollow
+      <br />
+      <br />
+
+      <br />
+      <h4>Wrap
+      <br />
+      <br />
+
+      <br />
+      <h4>Struct
+      <br />
+      <br />
+
+      <br />
+      <h4>Enumeration
+      <br />
+      <br />
+
       <br />
       <br />
