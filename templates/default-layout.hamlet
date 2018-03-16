@@ -52,9 +52,12 @@ $else
         <p .text-muted>
             #{appCopyright $ appSettings master}
             <br />
+            <br />
+            <br />
             <center>
               <div .text-muted style="font-size: 1.2em">
                 Sponsored by
+                <br />
                 <br />
                 <a href="https://www.camp47.com">
                   <img src=@{StaticR img_camp47_logo_png} alt="Camp 47" width="40px" height="40px" />
