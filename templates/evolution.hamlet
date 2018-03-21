@@ -7,8 +7,8 @@
       <br />
       <br />
 
-      When it comes to <b>API</b> integration.
-      <b>Versioning</b> is a hot topic for debate.
+      When it comes to long-term <b>API</b> integration,
+      <b>versioning</b> is a hot topic for debate.
       One thing is for sure, backwards compability is a necessity when the system grows.
       But how do you do it?
       They are many approaches including an unfortunate, <i>laissez faire</i> approach with "versionless" <b>APIs</b>,

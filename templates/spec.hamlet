@@ -34,11 +34,12 @@
                 &nbsp;&nbsp;"fluid":{"major":0, "minor":0},<br />
                 &nbsp;&nbsp;"pull": {<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;"name": "HelloWorld",<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit",<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;"meta": "Unit",<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;"protocol": "http",<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;"host": "localhost",<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"port": 8080,<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"path": "/",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"meta": "Unit",<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;"error": "Unit"<br />
                 &nbsp;&nbsp;},<br />
                 &nbsp;&nbsp;"schema":{<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;"Hello": {"m":[{"who":"String"}], "o": "String"}<br />
@@ -62,11 +63,12 @@
                 &nbsp;&nbsp;minor: 0<br />
                 pull:<br />
                 &nbsp;&nbsp;name: HelloWorld<br />
-                &nbsp;&nbsp;error: Unit<br />
-                &nbsp;&nbsp;meta: Unit<br />
                 &nbsp;&nbsp;protocol: http<br />
                 &nbsp;&nbsp;host: localhost<br />
                 &nbsp;&nbsp;port: 8080<br />
+                &nbsp;&nbsp;path: /<br />
+                &nbsp;&nbsp;meta: Unit<br />
+                &nbsp;&nbsp;error: Unit<br />
                 schema:<br />
                 &nbsp;&nbsp;Hello:<br/>
                 &nbsp;&nbsp;&nbsp;&nbsp;m: [who: String]<br />
