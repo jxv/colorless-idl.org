@@ -107,7 +107,8 @@
                 &nbsp;&nbsp;ruby -ryaml -rjson -e 'puts JSON.pretty_generate(YAML.load($stdin.read))'<br />
                 }<br />
                 <br />
-                for i in api-yaml/*.yaml; do<br />
+                rm api-json/*<br />
+                for yaml in api/*.yaml; do<br />
                 &nbsp;&nbsp;[ -f "$yaml" ] || break<br />
                 &nbsp;&nbsp;echo $yaml<br />
                 &nbsp;&nbsp;json=`basename $yaml .yaml`.json<br />
