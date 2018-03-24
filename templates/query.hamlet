@@ -122,13 +122,6 @@
       <h4> Tuple
       <br />
 
-      <table .table .table-striped .table-condensed .table-bordered>
-        <tbody>
-          <tr>
-            <td>
-              <code style="background-color: transparent">
-                ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
-
       <br />
       <h4> List
       <br />
@@ -202,51 +195,112 @@
       <br />
       <h4>if
       <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["if", &lt;bool>, &lt;expr on true&gt;, &lt;expr on false&gt;]
 
       <br />
       <h4>iflet
       <br />
-      <br />
+      <p>
+        <code>iflet</code> is a special case to match against <code>Option</code> values.
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["iflet", &lt;var&gt;, &lt;expr&gt;, &lt;expr on some&gt;, &lt;expr on none&gt;]
 
+      <br />
       <br />
       <h4>def
       <br />
-      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["def", &lt;var&gt;, &lt;expr&gt;]
 
+      <br />
       <br />
       <h4>do
       <br />
-      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["do", &lt;expr&gt;, &lt;expr&gt;, ...]
 
+      <br />
       <br />
       <h4>fn
       <br />
-      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["fn", [{&lt;var&gt;:&lt;type&gt;}, ...], &lt;expr&gt;]
 
+      <br />
       <br />
       <h4>match
       <br />
-      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["match", &lt;expr&gt;, [[&lt;tag&gt;, &lt;expr&gt;], ...]]
 
+      <br />
       <br />
       <h4>get
       <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["get", ["member", ...], &lt;expr&gt;]
       <br />
-
       <br />
       <h4>set
       <br />
-      <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["set", ["member", ...], &lt;src expr&gt;, &lt;dest expr&gt;]
 
+      <br />
       <br />
       <h4>list
       <br />
       <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["list", [&lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]]
 
       <br />
       <h4>tuple
       <br />
       <br />
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <code style="background-color: transparent">
+                ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
 
       <br />
       <br />
