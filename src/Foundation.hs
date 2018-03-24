@@ -115,11 +115,6 @@ instance Yesod App where
                     , menuItemRoute = Left LangsR
                     , menuItemAccessCallback = True
                     }
-                , NavbarLeft $ MenuItem
-                    { menuItemLabel = "How To"
-                    , menuItemRoute = Left IntegrateR
-                    , menuItemAccessCallback = True
-                    }
                 , NavbarRight $ MenuItem
                     { menuItemLabel = "#Fluid on Slack"
                     , menuItemRoute = Right "http://slack.httpapis.com/"
