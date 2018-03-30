@@ -192,199 +192,290 @@
       <br />
       <h2> Built-in functions
       <br />
+      <h3 style="font-weight: bold; font-family: monospace">if
       <br />
-      <h4>if
-      <br />
+      <h4>
+        Pattern
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
-          <tr>
-            <th> Pattern
-            <th> Example
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["if", &lt;bool&gt;, &lt;expr on true&gt;, &lt;expr on false&gt;]
-            <td>
-              <code style="background-color: transparent">
-                ["if", true, ["addInt", 1, 2], ["addInt", 3, 5]]
+      <h4>
+        Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
           <tr>
             <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["if", true, ["addInt", 1, 2], ["addInt", 3, 5]]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  3
+          <tr>
             <td>
-              <code style="background-color: transparent">
-                ["if", false, ["addInt", 1, 2], ["addInt", 3, 5]]
-
+              <p>
+                <code style="background-color: transparent">
+                  ["if", false, ["addInt", 1, 2], ["addInt", 3, 5]]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  8
       <br />
-      <h4>iflet
+      <h3 style="font-weight: bold; font-family: monospace">iflet
       <br />
       <p>
         <code>iflet</code> is a special case to match against <code>Option</code> values.
+      <h4>
+        Pattern
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
-          <tr>
-            <th> Pattern
-            <th> Example
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["iflet", &lt;var&gt;, &lt;expr&gt;, &lt;expr on some&gt;, &lt;expr on none&gt;]
-            <td>
-              <code style="background-color: transparent">
-                ["iflet", "x", null, ["addInt", {"@":"x"}, 1], 1]
-          <tr>
-            <td>
-            <td>
-              <code style="background-color: transparent">
-                ["iflet", "x", 10, ["addInt", {"@":"x"}, 1], 1]
-
-      <br />
-      <h4>fn
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["iflet", "x", null, ["addInt", {"@":"x"}, 1], 1]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  1
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["iflet", "x", 10, ["addInt", {"@":"x"}, 1], 1]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  11
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">fn
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["fn", [{&lt;var&gt;:&lt;type&gt;}, ...], &lt;expr&gt;]
-            <td>
-              <code style="background-color: transparent">
-                [["fn", [{"x":"Int"}], ["addInt", 10, {"@":"x"}]], 100]
-
-      <br />
-      <h4>def
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  [["fn", [{"x":"Int"}], ["addInt", 10, {"@":"x"}]], 100]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  110
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">def
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["def", &lt;var&gt;, &lt;expr&gt;]
+      <h4>
+        Example
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
-                ["def", &lt;var&gt;, &lt;expr&gt;]
-            <td>
-              <code style="background-color: transparent">
                 ["def", "ten", 10]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  10
           <tr>
             <td>
-            <td>
-              <code style="background-color: transparent">
-                ["def", "addTen", ["fn", [{"x":"Int"}], ["addInt", 10, {"@": "x"}]]]
-
+              <p>
+                <code style="background-color: transparent">
+                  ["def", "addTen", ["fn", [{"x":"Int"}], ["addInt", 10, {"@": "x"}]]]
+              <p>
+                <b>
+                  Result:
+                Function reference to <code>addTen</code>
       <br />
-      <h4>do
+      <h3 style="font-weight: bold; font-family: monospace">do
       <br />
+      <h4>
+        Pattern
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
-          <tr>
-            <th> Pattern
-            <th> Example
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["do", &lt;expr&gt;, &lt;expr&gt;, ...]
-            <td>
-              <code style="background-color: transparent">
-                ["do",<br />
-                &nbsp;&nbsp;["def", "addTen", ["fn", [{"x":"Int"}], ["addInt", 10, {"@": "x"}]]],<br />
-                &nbsp;&nbsp;["addTen", 20]]
-      <br />
-      <h4>match
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["do",<br />
+                  &nbsp;&nbsp;["def", "addTen", ["fn", [{"x":"Int"}], ["addInt", 10, {"@": "x"}]]],<br />
+                  &nbsp;&nbsp;["addTen", 20]]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  30
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">match
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["match", &lt;expr&gt;, [[&lt;tag&gt;, &lt;expr&gt;], ...]]
-            <td>
-              <code style="background-color: transparent">
-                ["match", {"tag":"Left","left":"words"},<br />
-                &nbsp;&nbsp;["Left","x",{"@":"x"}],<br />
-                &nbsp;&nbsp;["Right","x",{"@":"x"}]]
-
-
-      <br />
-      <br />
-      <h4>get
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["match", {"tag":"Left","left":"words"},<br />
+                  &nbsp;&nbsp;["Left", "x", ["get", ["left"], {"@":"x"}]],<br />
+                  &nbsp;&nbsp;["Right", "x", ["get", ["right"], {"@":"x"}]]]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  "words"
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">get
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["get", ["member", ...], &lt;expr&gt;]
-            <td>
-              <code style="background-color: transparent">
-                ["get", ["x","y"], {"x": {"y": 10}}]
-      <br />
-      <br />
-      <h4>set
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["get", ["x","y"], {"x": {"y": 10}}]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  10
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">set
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["set", ["member", ...], &lt;src expr&gt;, &lt;dest expr&gt;]
-            <td>
-              <code style="background-color: transparent">
-                ["set", ["x","y"], 20, {"x": {"y": 10}}]
-
-      <br />
-      <br />
-      <h4>list
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["set", ["x","y"], 20, {"x": {"y": 10}}]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  {"x": {"y": 20}}
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">list
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["list", [&lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]]
-            <td>
-              <code style="background-color: transparent">
-                ["list", [1,2,3,4,5,6,7,8,9,0]]
-
-      <br />
-      <h4>tuple
-      <br />
+      <h4>
+        Example
       <table .table .table-striped .table-condensed .table-bordered>
-        <thead>
+        <tbody>
           <tr>
-            <th> Pattern
-            <th> Example
+            <td>
+              <p>
+                <code style="background-color: transparent">
+                  ["list", [1,2,3,4,5,6,7,8,9,0]]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  [1,2,3,4,5,6,7,8,9,0]
+      <br />
+      <h3 style="font-weight: bold; font-family: monospace">tuple
+      <br />
+      <h4>
+        Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
         <tbody>
           <tr>
             <td>
               <code style="background-color: transparent">
                 ["tuple", &lt;x0&gt;, &lt;x1&gt;, &lt;x2&gt;, ...]
+      <h4>
+        Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
             <td>
-              <code style="background-color: transparent">
-                ["tuple", 1, "two", 3]
-
+              <p>
+                <code style="background-color: transparent">
+                  ["tuple", 1, "two", 3]
+              <p>
+                <b>
+                  Result:
+                <code>
+                  [1,"two",3]
       <br />
       <br />
       <h2> Schema Defined Functions
