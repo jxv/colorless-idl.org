@@ -35,6 +35,7 @@
                 }
       <br />
 
+      <br />
       <h2> JSON
       <br />
 
@@ -67,6 +68,7 @@
       <br />
       <br />
 
+      <br />
       <h2> Sandboxed Runtimes
       <br />
 
@@ -90,8 +92,9 @@
       Those rules are as <b>loose or strict</b> and as <b>static or dynamic</b> as desired.
       How that happens should remain a mystery to the sandboxed runtime.
       It's no business of any <b>API</b> code to directly deal with authentication and authorization logic.
-
       <br />
+      <br />
+
       <br />
       <h2>Built-in Types
       <br />
@@ -186,13 +189,13 @@
       Like <code>Int</code>, the majority of languages have a 64-bit floating point type.
       In transport, it uses the <b>JSON</b> number representation as well.
       This is a proper overloaded usage.
-
-
       <br />
+      <br />
+
       <br />
       <h2> Built-in functions
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">if
+      <h3 style="font-family: monospace">if
       <br />
       <h4>
         Pattern
@@ -227,7 +230,7 @@
                 <code>
                   8
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">iflet
+      <h3 style="font-family: monospace">iflet
       <br />
       <p>
         <code>iflet</code> is a special case to match against <code>Option</code> values.
@@ -264,7 +267,7 @@
                 <code>
                   11
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">fn
+      <h3 style="font-family: monospace">fn
       <br />
       <h4>
         Pattern
@@ -289,7 +292,7 @@
                 <code>
                   110
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">def
+      <h3 style="font-family: monospace">def
       <br />
       <h4>
         Pattern
@@ -323,7 +326,7 @@
                   Result:
                 Function reference to <code>addTen</code>
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">do
+      <h3 style="font-family: monospace">do
       <br />
       <h4>
         Pattern
@@ -350,7 +353,7 @@
                 <code>
                   30
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">match
+      <h3 style="font-family: monospace">match
       <br />
       <h4>
         Pattern
@@ -377,7 +380,7 @@
                 <code>
                   "words"
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">get
+      <h3 style="font-family: monospace">get
       <br />
       <h4>
         Pattern
@@ -402,7 +405,7 @@
                 <code>
                   10
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">set
+      <h3 style="font-family: monospace">set
       <br />
       <h4>
         Pattern
@@ -427,7 +430,7 @@
                 <code>
                   {"x": {"y": 20}}
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">list
+      <h3 style="font-family: monospace">list
       <br />
       <h4>
         Pattern
@@ -452,7 +455,7 @@
                 <code>
                   [1,2,3,4,5,6,7,8,9,0]
       <br />
-      <h3 style="font-weight: bold; font-family: monospace">tuple
+      <h3 style="font-family: monospace">tuple
       <br />
       <h4>
         Pattern
@@ -476,6 +479,7 @@
                   Result:
                 <code>
                   [1,"two",3]
+      <br />
       <br />
       <br />
       <h2> Schema Defined Functions

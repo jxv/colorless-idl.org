@@ -66,11 +66,9 @@
       Instead it will be imported and used with the succeeding versions.
       This is great because function implementations can also be reused.
       <br />
-      <b>
       <br />
       <br />
       <h3>Deprecating versions
-      <br />
       <br />
       There comes a day in which an <b>API</b> will die.
       It can't be supported forever, but deprecating should be as easy as introducing it.
