@@ -484,26 +484,158 @@
       <br />
       <h2> Schema Defined Functions
       <br />
+      <h3>Hollow
+      <br />
+      <h4>Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"&lt;name&gt;": {"o":"&lt;output&gt;"}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"&lt;name&gt;"}
+      <h4>Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"RandomString": {"o":"String"}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"RandomString"}
+              <p>
+                <b>Result:
+                <code>"jJO*3fxlF(_KSP2s+"
 
       <br />
-      <h4>Hollow
+      <h3>Wrap
       <br />
-      <br />
+      <h4>Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"&lt;name&gt;": {"w":&lt;input&gt;, "o":&lt;output&gt;}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"&lt;name&gt;", "w":&lt;input&gt;}
+      <h4>Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"AddOne": {"w":"Int", "o":"Int"}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"AddOne", "w": 10}
+              <p>
+                <b>Result:
+                <code>11
 
       <br />
-      <h4>Wrap
+      <h3>Struct
       <br />
-      <br />
+      <h4>Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"&lt;name&gt;": {"m":[{"&lt;member name&gt;": &lt;member type&gt;}, ...], "o":&lt;output&gt;}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"&lt;name&gt;", "m": {"&lt;member name&gt;": &lt;member value&gt;, ...}}
+      <h4>Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"CreateItem": {"m": [{"name":"String"}, {"color":"Color"}], "o":"ItemId"}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"CreateItem", "m": {"name":"Box", "color": {"tag":"Black"}}}
+              <p>
+                <b>Result:
+                <code>"ITEM-19132"
 
       <br />
-      <h4>Struct
+      <h3>Enumeration
       <br />
-      <br />
-
-      <br />
-      <h4>Enumeration
-      <br />
-      <br />
-
-      <br />
-      <br />
+      <h4>Pattern
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">"&lt;name&gt;": {"e":[&lt;enumeral definition&gt;, ...], "o":&lt;output&gt;}
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"&lt;name&gt;", "e": {"tag": &lt;enumeral tag&gt;, ...}}
+      <h4>Example
+      <table .table .table-striped .table-condensed .table-bordered>
+        <thead>
+          <tr>
+            <td><b>Definition
+        <tbody>
+          <tr>
+            <td><code style="background-color: transparent">
+              "OrderFood": {<br />
+              &nbsp;&nbsp;"e":[<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"Burger",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;"Fries",<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;{"tag":"Drink", "m":[{"flavor":"DrinkFlavor"}]}<br />
+              &nbsp;&nbsp;],<br />
+              &nbsp;&nbsp;"o":"OrderId"<br />
+              }
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"OrderFood", "e": {"tag":"Burger"}}
+              <p>
+                <b>Result:
+                <code>"ORDER-104"
+      <table .table .table-striped .table-condensed .table-bordered>
+        <tbody>
+          <tr>
+            <td>
+              <p>
+                <code style="background-color: transparent">{"n":"OrderFood", "e": {"tag":"Drink", "m": {"flavor": {"tag": "Lemonade"}}}}
+              <p>
+                <b>Result:
+                <code>"ORDER-105"
