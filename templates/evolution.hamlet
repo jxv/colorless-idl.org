@@ -20,6 +20,8 @@
       And it does so an interesting way, where breaking changes aren't heart breaking.
       <br />
       <br />
+      <h2>What's supported
+      <br />
       Because <b>Fluid</b> requires a spec file for the <b>API</b>, the spec must be saved for later consumption and generation.
       And over time you save many progressing specs with various changes.
       Each change derives from a new feature or removal of one.
@@ -42,7 +44,7 @@
       An <b>entire</b> class of problems is avoided.
       <br />
       <br />
-      <h3>Supporting different versions on the Server
+      <h2>Supporting different versions on the Server
       <br />
       It's fairly straight forward for a client to operate from one version of the spec.
       The code is generated and sends requests to the server.
@@ -57,7 +59,7 @@
       <br />
       <br />
       <br />
-      <h3>Don't reimplement non-changes
+      <h2>Don't reimplement non-changes
       <br />
       First, servers only generate major versions.
       Non-latest minor versions are assumed to be handled by the latest one.
@@ -68,7 +70,7 @@
       <br />
       <br />
       <br />
-      <h3>Deprecating versions
+      <h2>Deprecating versions
       <br />
       There comes a day in which an <b>API</b> will die.
       It can't be supported forever, but deprecating should be as easy as introducing it.

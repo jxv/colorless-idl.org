@@ -125,15 +125,25 @@
       <h4> Tuple
       <br />
 
+      A <b>Tuple</b> can be used in a response of query.
+      The <b>JSON</b> representation is a list.
+
       <br />
       <br />
       <h4> List
       <br />
 
+      A <b>List</b> hold values of the same type.
+      The <b>JSON</b> representation is a list.
+
       <br />
       <br />
       <h4> Either
       <br />
+
+      An <b>Either</b> holds one of two user decided values.
+      They're often used with functions with potential errors or situtations where the result needs to represent failure.
+      The <b>JSON</b> representation is an object with a tag and the member value.
 
       <br />
       <br />
